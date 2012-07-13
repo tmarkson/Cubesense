@@ -1,0 +1,4 @@
+
+F:\Lumisense\eigthCubed\Software\CubeSense\Simulations>C:\MinGW\bin\g++ -c -DBUILDING_EXAMPLE_DLL dll_test1.cpp  1>r2.txt 2>&1 
+
+F:\Lumisense\eigthCubed\Software\CubeSense\Simulations>C:\MinGW\bin\g++ -shared -o dll_test1.dll dll_test1.o -Wl,--out-implib,dll_test1.a  1>r3.txt 2>&1 

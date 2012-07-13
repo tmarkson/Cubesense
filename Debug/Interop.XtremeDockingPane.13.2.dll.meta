@@ -1,0 +1,2155 @@
+Assembly Interop.XtremeDockingPane.13.2, Version=13.2.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=None
+Interface XtremeDockingPane.PropExchange: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.Object Value 'get set' : 
+    System.String Encoding 'get set' : 
+    Boolean Loading 'get ' : 
+    Boolean Valid 'get ' : 
+  Methods:
+    get_Value(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Value(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Encoding(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Encoding(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CreateAsXML(Boolean, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CreateAsRegistry(Boolean, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CreateAsBinaryFile(Boolean, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadFromFile(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SaveToFile(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetSection(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExchangeString(String(HasFieldMarshal), String&(HasFieldMarshal), String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ExchangeInt(String(HasFieldMarshal), Int32&, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Loading(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Valid(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    EmptySection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Struct XtremeDockingPane.XTPTabAppearanceStyle: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.XTPTabAppearanceStyle xtpTabAppearancePropertyPage = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabAppearanceStyle xtpTabAppearancePropertyPageSelected = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabAppearanceStyle xtpTabAppearancePropertyPageFlat = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabAppearanceStyle xtpTabAppearancePropertyPage2003 = 3 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabAppearanceStyle xtpTabAppearanceStateButtons = 4 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabAppearanceStyle xtpTabAppearanceVisualStudio = 5 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabAppearanceStyle xtpTabAppearanceFlat = 6 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabAppearanceStyle xtpTabAppearanceExcel = 7 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabAppearanceStyle xtpTabAppearanceVisio = 8 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabAppearanceStyle xtpTabAppearanceVisualStudio2005 = 9 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabAppearanceStyle xtpTabAppearancePropertyPage2007 = 10 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabAppearanceStyle xtpTabAppearancePropertyPageAccess2007 = 11 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.XTPTabColorStyle: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.XTPTabColorStyle xtpTabColorDefault = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabColorStyle xtpTabColorVisualStudio = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabColorStyle xtpTabColorOffice2003 = 4 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabColorStyle xtpTabColorWinXP = 8 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabColorStyle xtpTabColorWhidbey = 16 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabColorStyle xtpTabColorOffice2007 = 32 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabColorStyle xtpTabColorVisualStudio2008 = 64 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabColorStyle xtpTabColorAccess2007 = 128 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.XTPTabPosition: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.XTPTabPosition xtpTabPositionTop = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabPosition xtpTabPositionLeft = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabPosition xtpTabPositionBottom = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabPosition xtpTabPositionRight = 3 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.XTPTabLayoutStyle: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.XTPTabLayoutStyle xtpTabLayoutAutoSize = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabLayoutStyle xtpTabLayoutSizeToFit = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabLayoutStyle xtpTabLayoutFixed = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabLayoutStyle xtpTabLayoutCompressed = 3 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabLayoutStyle xtpTabLayoutMultiRow = 4 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabLayoutStyle xtpTabLayoutRotated = 5 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.XTPTabClientFrame: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.XTPTabClientFrame xtpTabFrameBorder = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabClientFrame xtpTabFrameSingleLine = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabClientFrame xtpTabFrameNone = 2 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.XTPTabToolTipBehaviour: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.XTPTabToolTipBehaviour xtpTabToolTipNever = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabToolTipBehaviour xtpTabToolTipAlways = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabToolTipBehaviour xtpTabToolTipShrinkedOnly = 2 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.XTPTabDrawTextFormat: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.XTPTabDrawTextFormat xtpTabDrawTextLeft = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabDrawTextFormat xtpTabDrawTextCenter = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabDrawTextFormat xtpTabDrawTextRight = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPTabDrawTextFormat xtpTabDrawTextVCenter = 4 : Public, Static, Literal, HasDefault
+Interface XtremeDockingPane.ITabManagerMargin: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 Left 'get set' : 
+    Int32 Top  'get set' : 
+    Int32 Right 'get set' : 
+    Int32 Bottom 'get set' : 
+  Methods:
+    get_Left(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Left(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Top(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Top(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Right(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Right(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Bottom(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Bottom(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SetRect(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class XtremeDockingPane.TabManagerMarginClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.ITabManagerMargin
+    XtremeDockingPane.TabManagerMargin
+  Properties:
+    Int32 Left 'get set' : 
+    Int32 Top  'get set' : 
+    Int32 Right 'get set' : 
+    Int32 Bottom 'get set' : 
+  Methods:
+    get_Left(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Left(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Top(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Top(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Right(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Right(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Bottom(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Bottom(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SetRect(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface XtremeDockingPane.TabManagerMargin: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.ITabManagerMargin
+Interface XtremeDockingPane.ITabPaintManagerColorSet: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    UInt32 HeaderFaceLight 'get set' : 
+    UInt32 HeaderFaceDark 'get set' : 
+    UInt32 FrameBorder 'get set' : 
+    UInt32 ControlFace 'get set' : 
+    UInt32 BorderHighlight 'get set' : 
+    UInt32 ButtonSelected 'get set' : 
+    UInt32 ButtonNormal 'get set' : 
+    UInt32 NormalText 'get set' : 
+    UInt32 InActiveText 'get set' : 
+    UInt32 SelectedText 'get set' : 
+    UInt32 HighlightText 'get set' : 
+    UInt32 DisabledText 'get set' : 
+    UInt32 TabExcelSelectedLeftInnerBorder 'get set' : 
+    UInt32 TabExcelSelectedTopInnerBorder 'get set' : 
+    UInt32 TabExcelSelectedRightInnerBorder 'get set' : 
+    UInt32 TabExcelSelectedLeftOuterBorder 'get set' : 
+    UInt32 TabExcelSelectedRightOuterBorder 'get set' : 
+    UInt32 TabExcelSelectedTopOuterBorder 'get set' : 
+    UInt32 TabExcelNormalLeftInnerBorder 'get set' : 
+    UInt32 TabExcelNormalTopInnerBorder 'get set' : 
+    UInt32 TabExcelNormalRightInnerBorder 'get set' : 
+    UInt32 TabExcelNormalLeftOuterBorder 'get set' : 
+    UInt32 TabExcelNormalRightOuterBorder 'get set' : 
+    UInt32 TabExcelNormalTopOuterBorder 'get set' : 
+    UInt32 TabPropertyPageHighlight 'get set' : 
+    UInt32 TabPropertyPageShadow 'get set' : 
+    UInt32 TabPropertyPageDarkShadow 'get set' : 
+    UInt32 TabPropertyPage2003DarkShadow 'get set' : 
+    UInt32 TabPropertyPage2003FrameBorder 'get set' : 
+    UInt32 TabPropertyPage2003BorderLeftHighlight 'get set' : 
+    UInt32 TabPropertyPage2003BorderTopHighlight 'get set' : 
+    UInt32 TabStateButtonFaceLight 'get set' : 
+    UInt32 TabStateButtonFaceDark 'get set' : 
+    UInt32 TabStateButtonBorderTopLeft 'get set' : 
+    UInt32 TabStateButtonBorderBottomRight 'get set' : 
+    UInt32 PaneFace 'get set' : 
+    UInt32 ButtonHighlighted 'get set' : 
+  Methods:
+    get_TabStateButtonFaceDark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabStateButtonFaceDark(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabStateButtonBorderTopLeft(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabStateButtonBorderTopLeft(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabStateButtonBorderBottomRight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabStateButtonBorderBottomRight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PaneFace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_PaneFace(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ButtonHighlighted(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ButtonHighlighted(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabExcelSelectedRightOuterBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabExcelSelectedRightOuterBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabExcelSelectedTopOuterBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabExcelSelectedTopOuterBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabExcelNormalLeftInnerBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabExcelNormalLeftInnerBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabExcelNormalTopInnerBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabExcelNormalTopInnerBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabExcelNormalRightInnerBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabExcelNormalRightInnerBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabExcelNormalLeftOuterBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabExcelNormalLeftOuterBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabExcelNormalRightOuterBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabExcelNormalRightOuterBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabExcelNormalTopOuterBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabExcelNormalTopOuterBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabPropertyPageHighlight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabPropertyPageHighlight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabPropertyPageShadow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabPropertyPageShadow(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabPropertyPageDarkShadow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabPropertyPageDarkShadow(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabPropertyPage2003DarkShadow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabPropertyPage2003DarkShadow(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabPropertyPage2003FrameBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabPropertyPage2003FrameBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabPropertyPage2003BorderLeftHighlight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabPropertyPage2003BorderLeftHighlight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabPropertyPage2003BorderTopHighlight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabPropertyPage2003BorderTopHighlight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabStateButtonFaceLight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabStateButtonFaceLight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HeaderFaceLight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_HeaderFaceLight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HeaderFaceDark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_HeaderFaceDark(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FrameBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_FrameBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ControlFace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ControlFace(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BorderHighlight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_BorderHighlight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ButtonSelected(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ButtonSelected(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ButtonNormal(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ButtonNormal(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NormalText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_NormalText(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_InActiveText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_InActiveText(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SelectedText(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HighlightText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_HighlightText(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DisabledText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DisabledText(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabExcelSelectedLeftInnerBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabExcelSelectedLeftInnerBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabExcelSelectedTopInnerBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabExcelSelectedTopInnerBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabExcelSelectedRightInnerBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabExcelSelectedRightInnerBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabExcelSelectedLeftOuterBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabExcelSelectedLeftOuterBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class XtremeDockingPane.TabPaintManagerColorSetClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.ITabPaintManagerColorSet
+    XtremeDockingPane.TabPaintManagerColorSet
+  Properties:
+    UInt32 HeaderFaceLight 'get set' : 
+    UInt32 HeaderFaceDark 'get set' : 
+    UInt32 FrameBorder 'get set' : 
+    UInt32 ControlFace 'get set' : 
+    UInt32 BorderHighlight 'get set' : 
+    UInt32 ButtonSelected 'get set' : 
+    UInt32 ButtonNormal 'get set' : 
+    UInt32 NormalText 'get set' : 
+    UInt32 InActiveText 'get set' : 
+    UInt32 SelectedText 'get set' : 
+    UInt32 HighlightText 'get set' : 
+    UInt32 DisabledText 'get set' : 
+    UInt32 TabExcelSelectedLeftInnerBorder 'get set' : 
+    UInt32 TabExcelSelectedTopInnerBorder 'get set' : 
+    UInt32 TabExcelSelectedRightInnerBorder 'get set' : 
+    UInt32 TabExcelSelectedLeftOuterBorder 'get set' : 
+    UInt32 TabExcelSelectedRightOuterBorder 'get set' : 
+    UInt32 TabExcelSelectedTopOuterBorder 'get set' : 
+    UInt32 TabExcelNormalLeftInnerBorder 'get set' : 
+    UInt32 TabExcelNormalTopInnerBorder 'get set' : 
+    UInt32 TabExcelNormalRightInnerBorder 'get set' : 
+    UInt32 TabExcelNormalLeftOuterBorder 'get set' : 
+    UInt32 TabExcelNormalRightOuterBorder 'get set' : 
+    UInt32 TabExcelNormalTopOuterBorder 'get set' : 
+    UInt32 TabPropertyPageHighlight 'get set' : 
+    UInt32 TabPropertyPageShadow 'get set' : 
+    UInt32 TabPropertyPageDarkShadow 'get set' : 
+    UInt32 TabPropertyPage2003DarkShadow 'get set' : 
+    UInt32 TabPropertyPage2003FrameBorder 'get set' : 
+    UInt32 TabPropertyPage2003BorderLeftHighlight 'get set' : 
+    UInt32 TabPropertyPage2003BorderTopHighlight 'get set' : 
+    UInt32 TabStateButtonFaceLight 'get set' : 
+    UInt32 TabStateButtonFaceDark 'get set' : 
+    UInt32 TabStateButtonBorderTopLeft 'get set' : 
+    UInt32 TabStateButtonBorderBottomRight 'get set' : 
+    UInt32 PaneFace 'get set' : 
+    UInt32 ButtonHighlighted 'get set' : 
+  Methods:
+    get_TabPropertyPageShadow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabPropertyPageShadow(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabPropertyPageDarkShadow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabPropertyPageDarkShadow(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabPropertyPage2003DarkShadow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabPropertyPage2003DarkShadow(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabPropertyPage2003FrameBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabPropertyPage2003FrameBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabPropertyPage2003BorderLeftHighlight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabPropertyPage2003BorderLeftHighlight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabPropertyPage2003BorderTopHighlight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabPropertyPage2003BorderTopHighlight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabStateButtonFaceLight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabStateButtonFaceLight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabStateButtonFaceDark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabStateButtonFaceDark(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabStateButtonBorderTopLeft(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabStateButtonBorderTopLeft(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabStateButtonBorderBottomRight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabStateButtonBorderBottomRight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PaneFace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PaneFace(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ButtonHighlighted(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ButtonHighlighted(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabExcelSelectedLeftInnerBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabExcelSelectedTopInnerBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabExcelSelectedTopInnerBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabExcelSelectedRightInnerBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabExcelSelectedRightInnerBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabExcelSelectedLeftOuterBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabExcelSelectedLeftOuterBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabExcelSelectedRightOuterBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabExcelSelectedRightOuterBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabExcelSelectedTopOuterBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabExcelSelectedTopOuterBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabExcelNormalLeftInnerBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabExcelNormalLeftInnerBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabExcelNormalTopInnerBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabExcelNormalTopInnerBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabExcelNormalRightInnerBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabExcelNormalRightInnerBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabExcelNormalLeftOuterBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabExcelNormalLeftOuterBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabExcelNormalRightOuterBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabExcelNormalRightOuterBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabExcelNormalTopOuterBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabExcelNormalTopOuterBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabPropertyPageHighlight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabPropertyPageHighlight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HeaderFaceLight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_HeaderFaceLight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HeaderFaceDark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_HeaderFaceDark(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_FrameBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_FrameBorder(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ControlFace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ControlFace(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BorderHighlight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_BorderHighlight(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ButtonSelected(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ButtonSelected(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ButtonNormal(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ButtonNormal(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_NormalText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_NormalText(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_InActiveText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_InActiveText(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectedText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SelectedText(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HighlightText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_HighlightText(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DisabledText(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DisabledText(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabExcelSelectedLeftInnerBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface XtremeDockingPane.TabPaintManagerColorSet: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.ITabPaintManagerColorSet
+Interface XtremeDockingPane.ITabPaintManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    XtremeDockingPane.XTPTabAppearanceStyle Appearance 'get set' : 
+    XtremeDockingPane.XTPTabColorStyle Color 'get set' : 
+    XtremeDockingPane.XTPTabLayoutStyle Layout 'get set' : 
+    XtremeDockingPane.XTPTabPosition Position 'get set' : 
+    Boolean BoldSelected 'get set' : 
+    Boolean HotTracking 'get set' : 
+    Boolean ShowIcons 'get set' : 
+    Boolean DisableLunaColors 'get set' : 
+    Boolean OneNoteColors 'get set' : 
+    XtremeDockingPane.XTPTabClientFrame ClientFrame 'get set' : 
+    Boolean StaticFrame 'get set' : 
+    Boolean DrawTextPathEllipsis 'get set' : 
+    Boolean DrawTextNoPrefix 'get set' : 
+    stdole.StdFont Font 'get set' : 
+    Boolean MultiRowFixedSelection 'get set' : 
+    Boolean MultiRowJustified 'get set' : 
+    XtremeDockingPane.XTPTabToolTipBehaviour ToolTipBehaviour 'get set' : 
+    Boolean SelectTabOnDragOver 'get set' : 
+    Boolean FillBackground 'get set' : 
+    Boolean RotateImageOnVerticalDraw 'get set' : 
+    Int32 FixedTabWidth 'get set' : 
+    Int32 MinTabWidth 'get set' : 
+    Int32 MaxTabWidth 'get set' : 
+    XtremeDockingPane.XTPTabDrawTextFormat DrawTextFormat 'get set' : 
+    Boolean ShowTabs 'get set' : 
+    Boolean ClearTypeTextQuality 'get set' : 
+    XtremeDockingPane.TabManagerMargin ClientMargin 'get ' : 
+    XtremeDockingPane.TabManagerMargin ControlMargin 'get ' : 
+    XtremeDockingPane.TabManagerMargin HeaderMargin 'get ' : 
+    XtremeDockingPane.TabManagerMargin ButtonMargin 'get ' : 
+    XtremeDockingPane.TabPaintManagerColorSet ColorSet 'get ' : 
+  Methods:
+    get_ToolTipBehaviour(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ToolTipBehaviour(XTPTabToolTipBehaviour): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectTabOnDragOver(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SelectTabOnDragOver(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FillBackground(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_FillBackground(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RotateImageOnVerticalDraw(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_RotateImageOnVerticalDraw(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FixedTabWidth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_FixedTabWidth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MinTabWidth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MinTabWidth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MaxTabWidth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MaxTabWidth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DrawTextFormat(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DrawTextFormat(XTPTabDrawTextFormat): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowTabs(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowTabs(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ClearTypeTextQuality(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ClearTypeTextQuality(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    IsColorSupported(XTPTabColorStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ClientMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ControlMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HeaderMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ButtonMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ColorSet(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SetIconSize(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Appearance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Appearance(XTPTabAppearanceStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Color(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Color(XTPTabColorStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Layout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Layout(XTPTabLayoutStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Position(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Position(XTPTabPosition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BoldSelected(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_BoldSelected(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HotTracking(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_HotTracking(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowIcons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowIcons(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DisableLunaColors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DisableLunaColors(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_OneNoteColors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_OneNoteColors(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ClientFrame(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ClientFrame(XTPTabClientFrame): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_StaticFrame(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_StaticFrame(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DrawTextPathEllipsis(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DrawTextPathEllipsis(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DrawTextNoPrefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DrawTextNoPrefix(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Font(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Font(StdFont): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MultiRowFixedSelection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MultiRowFixedSelection(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MultiRowJustified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MultiRowJustified(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class XtremeDockingPane.TabPaintManagerClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.ITabPaintManager
+    XtremeDockingPane.TabPaintManager
+  Properties:
+    XtremeDockingPane.XTPTabAppearanceStyle Appearance 'get set' : 
+    XtremeDockingPane.XTPTabColorStyle Color 'get set' : 
+    XtremeDockingPane.XTPTabLayoutStyle Layout 'get set' : 
+    XtremeDockingPane.XTPTabPosition Position 'get set' : 
+    Boolean BoldSelected 'get set' : 
+    Boolean HotTracking 'get set' : 
+    Boolean ShowIcons 'get set' : 
+    Boolean DisableLunaColors 'get set' : 
+    Boolean OneNoteColors 'get set' : 
+    XtremeDockingPane.XTPTabClientFrame ClientFrame 'get set' : 
+    Boolean StaticFrame 'get set' : 
+    Boolean DrawTextPathEllipsis 'get set' : 
+    Boolean DrawTextNoPrefix 'get set' : 
+    stdole.StdFont Font 'get set' : 
+    Boolean MultiRowFixedSelection 'get set' : 
+    Boolean MultiRowJustified 'get set' : 
+    XtremeDockingPane.XTPTabToolTipBehaviour ToolTipBehaviour 'get set' : 
+    Boolean SelectTabOnDragOver 'get set' : 
+    Boolean FillBackground 'get set' : 
+    Boolean RotateImageOnVerticalDraw 'get set' : 
+    Int32 FixedTabWidth 'get set' : 
+    Int32 MinTabWidth 'get set' : 
+    Int32 MaxTabWidth 'get set' : 
+    XtremeDockingPane.XTPTabDrawTextFormat DrawTextFormat 'get set' : 
+    Boolean ShowTabs 'get set' : 
+    Boolean ClearTypeTextQuality 'get set' : 
+    XtremeDockingPane.TabManagerMargin ClientMargin 'get ' : 
+    XtremeDockingPane.TabManagerMargin ControlMargin 'get ' : 
+    XtremeDockingPane.TabManagerMargin HeaderMargin 'get ' : 
+    XtremeDockingPane.TabManagerMargin ButtonMargin 'get ' : 
+    XtremeDockingPane.TabPaintManagerColorSet ColorSet 'get ' : 
+  Methods:
+    get_ClearTypeTextQuality(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ClearTypeTextQuality(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    IsColorSupported(XTPTabColorStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ClientMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ControlMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HeaderMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ButtonMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ColorSet(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SetIconSize(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    set_DrawTextNoPrefix(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Font(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Font(StdFont): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MultiRowFixedSelection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MultiRowFixedSelection(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MultiRowJustified(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MultiRowJustified(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ToolTipBehaviour(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ToolTipBehaviour(XTPTabToolTipBehaviour): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SelectTabOnDragOver(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SelectTabOnDragOver(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_FillBackground(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_FillBackground(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RotateImageOnVerticalDraw(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_RotateImageOnVerticalDraw(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_FixedTabWidth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_FixedTabWidth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MinTabWidth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MinTabWidth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaxTabWidth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MaxTabWidth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DrawTextFormat(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DrawTextFormat(XTPTabDrawTextFormat): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowTabs(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowTabs(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Appearance(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Appearance(XTPTabAppearanceStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Color(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Color(XTPTabColorStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Layout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Layout(XTPTabLayoutStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Position(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Position(XTPTabPosition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BoldSelected(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_BoldSelected(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HotTracking(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_HotTracking(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowIcons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowIcons(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DisableLunaColors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DisableLunaColors(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OneNoteColors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_OneNoteColors(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ClientFrame(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ClientFrame(XTPTabClientFrame): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_StaticFrame(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_StaticFrame(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DrawTextPathEllipsis(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DrawTextPathEllipsis(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DrawTextNoPrefix(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface XtremeDockingPane.TabPaintManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.ITabPaintManager
+Interface XtremeDockingPane.ITabControlItem: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String Caption 'get set' : 
+    System.Object Tag 'get set' : 
+    Boolean Selected 'get set' : 
+    Int32 Image 'get set' : 
+    UInt32 Color 'get set' : 
+    Boolean Visible 'get set' : 
+    Boolean Enabled 'get set' : 
+    System.String ToolTip 'get set' : 
+    Boolean Closable 'get set' : 
+    Int32 Handle 'get set' : 
+    Int32 Index 'get ' : 
+  Methods:
+    get_Caption(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Caption(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Tag(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Tag(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Selected(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Selected(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Image(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Image(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Color(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Color(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Visible(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Visible(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Enabled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Enabled(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ToolTip(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Closable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Closable(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Handle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Handle(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Index(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Move(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetRect(Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EnsureVisible(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class XtremeDockingPane.TabControlItemClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.ITabControlItem
+    XtremeDockingPane.TabControlItem
+  Properties:
+    System.String Caption 'get set' : 
+    System.Object Tag 'get set' : 
+    Boolean Selected 'get set' : 
+    Int32 Image 'get set' : 
+    UInt32 Color 'get set' : 
+    Boolean Visible 'get set' : 
+    Boolean Enabled 'get set' : 
+    System.String ToolTip 'get set' : 
+    Boolean Closable 'get set' : 
+    Int32 Handle 'get set' : 
+    Int32 Index 'get ' : 
+  Methods:
+    get_Caption(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Caption(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Tag(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Tag(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Selected(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Selected(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Image(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Image(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Color(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Color(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Visible(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Visible(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Enabled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Enabled(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ToolTip(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Closable(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Closable(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Handle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Handle(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Index(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Move(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetRect(Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnsureVisible(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface XtremeDockingPane.TabControlItem: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.ITabControlItem
+Struct XtremeDockingPane.XTPImageState: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.XTPImageState xtpImageNormal = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPImageState xtpImageDisabled = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPImageState xtpImageHot = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPImageState xtpImageChecked = 3 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPImageState xtpImagePressed = 4 : Public, Static, Literal, HasDefault
+Interface XtremeDockingPane.ImageManagerIcon: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 Id   'get ' : 
+    Int32 Width 'get ' : 
+    Int32 Height 'get ' : 
+    Boolean Scaled 'get ' : 
+    Boolean Alpha 'get ' : 
+    Int32 Handle 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Width(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Height(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Scaled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Alpha(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Handle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Draw(Int32, Int32, Int32, Int32, Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CreatePicture(XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Scale(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface XtremeDockingPane.ImageManagerIconSet: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Id   'get ' : 
+    Int32 Count 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetImage(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface XtremeDockingPane.IImageManagerIcons: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    Boolean DrawReverted 'get set' : 
+    UInt32 MaskColor 'get set' : 
+    Int32 Count 'get ' : 
+    Boolean IsAlphaIconsSupported 'get ' : 
+  Methods:
+    get_DrawReverted(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DrawReverted(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MaskColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MaskColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AddIcon(Int32, Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadIcon(String(HasFieldMarshal), Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddBitmap(Int32, Object(In, HasFieldMarshal), XTPImageState, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadBitmap(String(HasFieldMarshal), Object(In, HasFieldMarshal), XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadBitmapFromResource(Int32, Int32, Object(In, HasFieldMarshal), XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadIconFromResource(Int32, Int32, Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RemoveAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddIcons(ImageManagerIcons(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RemoveIcon(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_IsAlphaIconsSupported(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    RefreshAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetImage(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DoPropExchange(PropExchange(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class XtremeDockingPane.ImageManagerIconsClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.IImageManagerIcons
+    System.Collections.IEnumerable
+    XtremeDockingPane.ImageManagerIcons
+  Properties:
+    Boolean DrawReverted 'get set' : 
+    UInt32 MaskColor 'get set' : 
+    Int32 Count 'get ' : 
+    Boolean IsAlphaIconsSupported 'get ' : 
+  Methods:
+    get_DrawReverted(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DrawReverted(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaskColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MaskColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    AddIcon(Int32, Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadIcon(String(HasFieldMarshal), Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddBitmap(Int32, Object(In, HasFieldMarshal), XTPImageState, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadBitmap(String(HasFieldMarshal), Object(In, HasFieldMarshal), XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadBitmapFromResource(Int32, Int32, Object(In, HasFieldMarshal), XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadIconFromResource(Int32, Int32, Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddIcons(ImageManagerIcons(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveIcon(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_IsAlphaIconsSupported(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    RefreshAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetImage(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DoPropExchange(PropExchange(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface XtremeDockingPane.ImageManagerIcons: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.IImageManagerIcons
+    System.Collections.IEnumerable
+Struct XtremeDockingPane.XTPColorManagerColor: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_BACKGROUND = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_ACTIVECAPTION = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_INACTIVECAPTION = 3 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_MENU = 4 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_WINDOW = 5 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_WINDOWFRAME = 6 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_MENUTEXT = 7 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_WINDOWTEXT = 8 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_CAPTIONTEXT = 9 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_ACTIVEBORDER = 10 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_INACTIVEBORDER = 11 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_APPWORKSPACE = 12 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_HIGHLIGHT = 13 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_HIGHLIGHTTEXT = 14 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_BTNFACE = 15 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_BTNSHADOW = 16 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_GRAYTEXT = 17 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_BTNTEXT = 18 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_INACTIVECAPTIONTEXT = 19 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_BTNHIGHLIGHT = 20 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_3DDKSHADOW = 21 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_3DLIGHT = 22 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_INFOTEXT = 23 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_INFOBK = 24 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_HOTLIGHT = 26 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_GRADIENTACTIVECAPTION = 27 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor STDCOLOR_GRADIENTINACTIVECAPTION = 28 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_TOOLBAR_FACE = 30 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_HIGHLIGHT = 31 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_HIGHLIGHT_BORDER = 32 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_HIGHLIGHT_PUSHED = 33 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_HIGHLIGHT_CHECKED = 36 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_HIGHLIGHT_CHECKED_BORDER = 37 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_ICONSHADDOW = 34 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_GRAYTEXT = 35 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_TOOLBAR_GRIPPER = 38 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_SEPARATOR = 39 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_DISABLED = 40 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_MENUBAR_FACE = 41 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_MENUBAR_EXPANDED = 42 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_MENUBAR_BORDER = 43 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_MENUBAR_TEXT = 44 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_HIGHLIGHT_TEXT = 45 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_TOOLBAR_TEXT = 46 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_PUSHED_TEXT = 47 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_TAB_INACTIVE_BACK = 48 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_TAB_INACTIVE_TEXT = 49 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_HIGHLIGHT_PUSHED_BORDER = 50 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_3DFACE = 51 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_3DSHADOW = 52 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_FRAME = 54 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_SPLITTER_FACE = 55 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_LABEL = 56 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPColorManagerColor XPCOLOR_STATICFRAME = 57 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.XTPCurrentSystemTheme: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.XTPCurrentSystemTheme xtpSystemThemeUnknown = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPCurrentSystemTheme xtpSystemThemeBlue = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPCurrentSystemTheme xtpSystemThemeOlive = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPCurrentSystemTheme xtpSystemThemeSilver = 3 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPCurrentSystemTheme xtpSystemThemeRoyale = 4 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPCurrentSystemTheme xtpSystemThemeAero = 5 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPCurrentSystemTheme xtpSystemThemeAuto = 6 : Public, Static, Literal, HasDefault
+Interface XtremeDockingPane.IColorManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    XtremeDockingPane.XTPCurrentSystemTheme SystemTheme 'get set' : 
+    Boolean EnableLunaBlueForRoyaleTheme 'get set' : 
+    UInt32 Color [XtremeDockingPane.XTPColorManagerColor] 'get ' : 
+  Methods:
+    get_SystemTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SystemTheme(XTPCurrentSystemTheme): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EnableLunaBlueForRoyaleTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_EnableLunaBlueForRoyaleTheme(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Color(XTPColorManagerColor): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SetColor(XTPColorManagerColor, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetCurrentSystemTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class XtremeDockingPane.ColorManagerClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.IColorManager
+    XtremeDockingPane.ColorManager
+  Properties:
+    XtremeDockingPane.XTPCurrentSystemTheme SystemTheme 'get set' : 
+    Boolean EnableLunaBlueForRoyaleTheme 'get set' : 
+    UInt32 Color [XtremeDockingPane.XTPColorManagerColor] 'get ' : 
+  Methods:
+    get_SystemTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SystemTheme(XTPCurrentSystemTheme): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EnableLunaBlueForRoyaleTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EnableLunaBlueForRoyaleTheme(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Color(XTPColorManagerColor): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SetColor(XTPColorManagerColor, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetCurrentSystemTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface XtremeDockingPane.ColorManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.IColorManager
+Struct XtremeDockingPane.XTPToolTipStyle: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.XTPToolTipStyle xtpToolTipStandard = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPToolTipStyle xtpToolTipBalloon = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPToolTipStyle xtpToolTipOffice = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPToolTipStyle xtpToolTipRTF = 3 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPToolTipStyle xtpToolTipLuna = 4 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPToolTipStyle xtpToolTipOffice2007 = 5 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPToolTipStyle xtpToolTipHTML = 6 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPToolTipStyle xtpToolTipMarkup = 7 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.XTPToolTipIcon: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.XTPToolTipIcon xtpToolTipIconNone = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPToolTipIcon xtpToolTipIconInfo = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPToolTipIcon xtpToolTipIconWarning = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPToolTipIcon xtpToolTipIconError = 3 : Public, Static, Literal, HasDefault
+Interface XtremeDockingPane.IToolTipContext: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    XtremeDockingPane.XTPToolTipStyle Style 'get set' : 
+    Int32 MaxTipWidth 'get set' : 
+    UInt32 TipBkColor 'get set' : 
+    UInt32 TipTextColor 'get set' : 
+    stdole.StdFont Font 'get set' : 
+    Boolean ShowOfficeBorder 'get set' : 
+    Boolean ShowShadow 'get set' : 
+  Methods:
+    get_Style(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Style(XTPToolTipStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MaxTipWidth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MaxTipWidth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TipBkColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TipBkColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TipTextColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TipTextColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Font(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Font(StdFont): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowOfficeBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowOfficeBorder(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowShadow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowShadow(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    ShowTitleAndDescription(Boolean, XTPToolTipIcon): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    IsBalloonStyleSupported(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetMargin(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ShowImage(Boolean, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class XtremeDockingPane.ToolTipContextClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.IToolTipContext
+    XtremeDockingPane.ToolTipContext
+  Properties:
+    XtremeDockingPane.XTPToolTipStyle Style 'get set' : 
+    Int32 MaxTipWidth 'get set' : 
+    UInt32 TipBkColor 'get set' : 
+    UInt32 TipTextColor 'get set' : 
+    stdole.StdFont Font 'get set' : 
+    Boolean ShowOfficeBorder 'get set' : 
+    Boolean ShowShadow 'get set' : 
+  Methods:
+    get_Style(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Style(XTPToolTipStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaxTipWidth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MaxTipWidth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TipBkColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TipBkColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TipTextColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TipTextColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Font(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Font(StdFont): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowOfficeBorder(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowOfficeBorder(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowShadow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowShadow(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    ShowTitleAndDescription(Boolean, XTPToolTipIcon): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IsBalloonStyleSupported(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetMargin(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ShowImage(Boolean, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface XtremeDockingPane.ToolTipContext: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.IToolTipContext
+Struct XtremeDockingPane.VisualTheme: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.VisualTheme ThemeDefault = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.VisualTheme ThemeOffice = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.VisualTheme ThemeOffice2003 = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.VisualTheme ThemeNativeWinXP = 3 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.VisualTheme ThemeGrippered = 4 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.VisualTheme ThemeVisio = 5 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.VisualTheme ThemeWhidbey = 6 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.VisualTheme ThemeShortcutBar2003 = 7 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.VisualTheme ThemeExplorer = 8 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.VisualTheme ThemeVisualStudio2005 = 9 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.VisualTheme ThemeOffice2007 = 10 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.VisualTheme ThemeWord2007 = 11 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.VisualTheme ThemeOutlook2007 = 12 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.DockingDirection: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.DockingDirection DockLeftOf = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingDirection DockRightOf = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingDirection DockTopOf = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingDirection DockBottomOf = 3 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.PaneOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.PaneOptions PaneNoCloseable = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.PaneOptions PaneNoHideable = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.PaneOptions PaneNoFloatable = 4 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.PaneOptions PaneNoCaption = 8 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.PaneOptions PaneHasMenuButton = 16 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.PaneOptions PaneNoDockable = 32 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.DockingContextStickerStyle: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.DockingContextStickerStyle StickerStyleWhidbey = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingContextStickerStyle StickerStyleVisualStudio2005 = 1 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.DockingPaneSplitterStyle: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.DockingPaneSplitterStyle PaneSplitterFlat = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneSplitterStyle PaneSplitter3D = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneSplitterStyle PaneSplitterSoft3D = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneSplitterStyle PaneSplitterGradient = 4 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneSplitterStyle PaneSplitterGripperOfficeXP = 256 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneSplitterStyle PaneSplitterGripperOffice2003 = 512 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.DockingPaneCaptionButtonStyle: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.DockingPaneCaptionButtonStyle PaneCaptionButtonDefault = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneCaptionButtonStyle PaneCaptionButtonOffice = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneCaptionButtonStyle PaneCaptionButtonOffice2003 = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneCaptionButtonStyle PaneCaptionButtonThemedExplorerBar = 3 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneCaptionButtonStyle PaneCaptionButtonThemedButton = 4 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneCaptionButtonStyle PaneCaptionButtonThemedToolBar = 5 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneCaptionButtonStyle PaneCaptionButtonThemedToolWindow = 6 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.DockingPaneCaptionDirection: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.DockingPaneCaptionDirection PaneCaptionHorizontal = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneCaptionDirection PaneCaptionVertical = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneCaptionDirection PaneCaptionAutoByPosition = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneCaptionDirection PaneCaptionAutoBySize = 3 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.DockingPaneEnableOptions: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.DockingPaneEnableOptions PaneDisabled = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneEnableOptions PaneEnableClient = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneEnableOptions PaneEnableActions = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneEnableOptions PaneEnabled = 3 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.DockingPaneKeyboardNavigate: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.DockingPaneKeyboardNavigate PaneKeyboardUnused = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneKeyboardNavigate PaneKeyboardUseAltMinus = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneKeyboardNavigate PaneKeyboardUseAltF6 = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneKeyboardNavigate PaneKeyboardUseAltF7 = 4 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneKeyboardNavigate PaneKeyboardUseCtrlTab = 8 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneKeyboardNavigate PaneKeyboardUseAll = 15 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.DockingPaneType: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.DockingPaneType PaneTypeDockingPane = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneType PaneTypeTabbedContainer = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneType PaneTypeSplitterContainer = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneType PaneTypeMiniWnd = 3 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneType PaneTypeClient = 4 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneType PaneTypeAutoHidePanel = 5 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneType PaneTypeSidePanel = 6 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.DockingPaneAction: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.DockingPaneAction PaneActionFloating = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionFloated = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionClosing = 2 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionClosed = 3 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionDocking = 4 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionDocked = 5 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionAttaching = 6 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionAttached = 7 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionPinning = 8 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionPinned = 9 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionCollapsing = 10 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionCollapsed = 11 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionExpanding = 12 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionExpanded = 13 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionActivated = 14 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionDeactivated = 15 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionDetaching = 16 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionDragging = 17 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionUnpinning = 18 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionUnpinned = 19 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionSplitterResizing = 20 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.DockingPaneAction PaneActionSplitterResized = 21 : Public, Static, Literal, HasDefault
+Struct XtremeDockingPane.XTPScaleMode: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeDockingPane.XTPScaleMode xtpScaleAuto = 0 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPScaleMode xtpScalePixel = 1 : Public, Static, Literal, HasDefault
+    XtremeDockingPane.XTPScaleMode xtpScaleTwip = 2 : Public, Static, Literal, HasDefault
+Interface XtremeDockingPane.IPane: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String Title 'get set' : 
+    Int32 Id   'get set' : 
+    Int32 IconId 'get set' : 
+    Int32 Handle 'get set' : 
+    Boolean Hidden 'get set' : 
+    Boolean Closed 'get set' : 
+    Boolean Selected 'get set' : 
+    XtremeDockingPane.PaneOptions Options 'get set' : 
+    Boolean Floating 'get set' : 
+    Int32 Tag  'get set' : 
+    UInt32 TabColor 'get set' : 
+    XtremeDockingPane.DockingPaneEnableOptions Enabled 'get set' : 
+    System.String TabCaption 'get set' : 
+    System.String TitleToolTip 'get set' : 
+    Boolean Maximized 'get set' : 
+    XtremeDockingPane.DockingPaneTrackSize MinTrackSize 'get ' : 
+    XtremeDockingPane.DockingPaneTrackSize MaxTrackSize 'get ' : 
+    XtremeDockingPane.PaneContainer ParentContainer 'get ' : 
+    XtremeDockingPane.DockingPaneType Type 'get ' : 
+    XtremeDockingPane.DockingDirection Position 'get ' : 
+  Methods:
+    Select(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AttachTo(Pane(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_MinTrackSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MaxTrackSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SetHandle(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ParentContainer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Position(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetClientRect(Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Title(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Title(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Id(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IconId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_IconId(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Handle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Handle(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Hidden(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Hidden(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Closed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Closed(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Selected(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Selected(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Options(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Options(PaneOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Floating(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Floating(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Tag(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Tag(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Enabled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Enabled(DockingPaneEnableOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabCaption(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabCaption(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TitleToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TitleToolTip(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Maximized(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Maximized(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Hide(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface XtremeDockingPane.IDockingPaneTrackSize: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 Width 'get set' : 
+    Int32 Height 'get set' : 
+  Methods:
+    get_Width(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Width(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Height(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Height(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SetSize(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface XtremeDockingPane.IPaneContainer: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Count 'get ' : 
+    XtremeDockingPane.PaneContainer Pane [Int32] 'get ' : 
+    XtremeDockingPane.PaneContainer ParentContainer 'get ' : 
+    XtremeDockingPane.DockingPaneType Type 'get ' : 
+    Int32 hWnd 'get ' : 
+    Boolean IsEmpty 'get ' : 
+    XtremeDockingPane.DockingDirection Position 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Pane(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ParentContainer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_hWnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_IsEmpty(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Position(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface XtremeDockingPane.IDockingPaneLayout: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    Int32 PanesCount 'get ' : 
+    XtremeDockingPane.Pane Pane [Int32] 'get ' : 
+    Int32 ContainersCount 'get ' : 
+    XtremeDockingPane.PaneContainer Container [Int32] 'get ' : 
+    XtremeDockingPane.PaneContainer TopContainer 'get ' : 
+    XtremeDockingPane.PaneContainer ClientContainer 'get ' : 
+  Methods:
+    DoPropExchange(PropExchange(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_PanesCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Pane(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_ContainersCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Container(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TopContainer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ClientContainer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class XtremeDockingPane.DockingPaneLayoutClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.IDockingPaneLayout
+    System.Collections.IEnumerable
+    XtremeDockingPane.DockingPaneLayout
+  Properties:
+    Int32 PanesCount 'get ' : 
+    XtremeDockingPane.Pane Pane [Int32] 'get ' : 
+    Int32 ContainersCount 'get ' : 
+    XtremeDockingPane.PaneContainer Container [Int32] 'get ' : 
+    XtremeDockingPane.PaneContainer TopContainer 'get ' : 
+    XtremeDockingPane.PaneContainer ClientContainer 'get ' : 
+  Methods:
+    DoPropExchange(PropExchange(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_PanesCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Pane(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ContainersCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Container(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TopContainer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ClientContainer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface XtremeDockingPane.DockingPaneLayout: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.IDockingPaneLayout
+    System.Collections.IEnumerable
+Class XtremeDockingPane.DockingPaneTrackSizeClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.IDockingPaneTrackSize
+    XtremeDockingPane.DockingPaneTrackSize
+  Properties:
+    Int32 Width 'get set' : 
+    Int32 Height 'get set' : 
+  Methods:
+    get_Width(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Width(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Height(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Height(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SetSize(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface XtremeDockingPane.DockingPaneTrackSize: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.IDockingPaneTrackSize
+Class XtremeDockingPane.PaneContainerClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.IPaneContainer
+    System.Collections.IEnumerable
+    XtremeDockingPane.PaneContainer
+  Properties:
+    Int32 Count 'get ' : 
+    XtremeDockingPane.PaneContainer Pane [Int32] 'get ' : 
+    XtremeDockingPane.PaneContainer ParentContainer 'get ' : 
+    XtremeDockingPane.DockingPaneType Type 'get ' : 
+    Int32 hWnd 'get ' : 
+    Boolean IsEmpty 'get ' : 
+    XtremeDockingPane.DockingDirection Position 'get ' : 
+  Methods:
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Pane(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ParentContainer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_hWnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IsEmpty(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Position(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface XtremeDockingPane.PaneContainer: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.IPaneContainer
+    System.Collections.IEnumerable
+Class XtremeDockingPane.PaneClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.IPane
+    XtremeDockingPane.Pane
+  Properties:
+    System.String Title 'get set' : 
+    Int32 Id   'get set' : 
+    Int32 IconId 'get set' : 
+    Int32 Handle 'get set' : 
+    Boolean Hidden 'get set' : 
+    Boolean Closed 'get set' : 
+    Boolean Selected 'get set' : 
+    XtremeDockingPane.PaneOptions Options 'get set' : 
+    Boolean Floating 'get set' : 
+    Int32 Tag  'get set' : 
+    UInt32 TabColor 'get set' : 
+    XtremeDockingPane.DockingPaneEnableOptions Enabled 'get set' : 
+    System.String TabCaption 'get set' : 
+    System.String TitleToolTip 'get set' : 
+    Boolean Maximized 'get set' : 
+    XtremeDockingPane.DockingPaneTrackSize MinTrackSize 'get ' : 
+    XtremeDockingPane.DockingPaneTrackSize MaxTrackSize 'get ' : 
+    XtremeDockingPane.PaneContainer ParentContainer 'get ' : 
+    XtremeDockingPane.DockingPaneType Type 'get ' : 
+    XtremeDockingPane.DockingDirection Position 'get ' : 
+  Methods:
+    set_TabCaption(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TitleToolTip(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TitleToolTip(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Maximized(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Maximized(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Hide(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Close(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Select(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachTo(Pane(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_MinTrackSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaxTrackSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SetHandle(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_ParentContainer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Type(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Position(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetClientRect(Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Title(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Title(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Id(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_IconId(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_IconId(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Handle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Handle(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Hidden(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Hidden(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Closed(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Closed(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Selected(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Selected(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Options(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Options(PaneOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Floating(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Floating(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Tag(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Tag(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Enabled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Enabled(DockingPaneEnableOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabCaption(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface XtremeDockingPane.Pane: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.IPane
+Interface XtremeDockingPane.IDockingPanePaintManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Boolean ShowCaption 'get set' : 
+    stdole.StdFont CaptionFont 'get set' : 
+    Boolean HighlightActiveCaption 'get set' : 
+    Boolean DrawSingleTab 'get set' : 
+    Int32 SplitterSize 'get set' : 
+    XtremeDockingPane.DockingPaneSplitterStyle SplitterStyle 'get set' : 
+    UInt32 SplitterColor 'get set' : 
+    XtremeDockingPane.DockingPaneCaptionButtonStyle CaptionButtonStyle 'get set' : 
+    Int32 CaptionMargin 'get set' : 
+    Boolean DrawCaptionIcon 'get set' : 
+  Methods:
+    get_ShowCaption(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowCaption(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CaptionFont(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CaptionFont(StdFont): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HighlightActiveCaption(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_HighlightActiveCaption(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DrawSingleTab(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DrawSingleTab(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SplitterSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SplitterSize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SplitterStyle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SplitterStyle(DockingPaneSplitterStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SplitterColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SplitterColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CaptionButtonStyle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CaptionButtonStyle(DockingPaneCaptionButtonStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CaptionMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CaptionMargin(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DrawCaptionIcon(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DrawCaptionIcon(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class XtremeDockingPane.DockingPanePaintManagerClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.IDockingPanePaintManager
+    XtremeDockingPane.DockingPanePaintManager
+  Properties:
+    Boolean ShowCaption 'get set' : 
+    stdole.StdFont CaptionFont 'get set' : 
+    Boolean HighlightActiveCaption 'get set' : 
+    Boolean DrawSingleTab 'get set' : 
+    Int32 SplitterSize 'get set' : 
+    XtremeDockingPane.DockingPaneSplitterStyle SplitterStyle 'get set' : 
+    UInt32 SplitterColor 'get set' : 
+    XtremeDockingPane.DockingPaneCaptionButtonStyle CaptionButtonStyle 'get set' : 
+    Int32 CaptionMargin 'get set' : 
+    Boolean DrawCaptionIcon 'get set' : 
+  Methods:
+    get_ShowCaption(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowCaption(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CaptionFont(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CaptionFont(StdFont): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HighlightActiveCaption(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_HighlightActiveCaption(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DrawSingleTab(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DrawSingleTab(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SplitterSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SplitterSize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SplitterStyle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SplitterStyle(DockingPaneSplitterStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SplitterColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SplitterColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CaptionButtonStyle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CaptionButtonStyle(DockingPaneCaptionButtonStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CaptionMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CaptionMargin(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DrawCaptionIcon(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DrawCaptionIcon(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface XtremeDockingPane.DockingPanePaintManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.IDockingPanePaintManager
+Interface XtremeDockingPane.IDockingPaneOptions: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Boolean LunaColors 'get set' : 
+    Double AnimationDelay 'get set' : 
+    Boolean HideClient 'get set' : 
+    Boolean UseSplitterTracker 'get set' : 
+    Boolean LockSplitters 'get set' : 
+    Boolean ThemedFloatingFrames 'get set' : 
+    System.String FloatingFrameCaption 'get set' : 
+    Boolean AlphaDockingContext 'get set' : 
+    Boolean ShowDockingContextStickers 'get set' : 
+    XtremeDockingPane.PaneOptions DefaultPaneOptions 'get set' : 
+    Boolean CloseGroupOnButtonClick 'get set' : 
+    Boolean HideGroupOnButtonClick 'get set' : 
+    Boolean SyncActiveFloatingFrames 'get set' : 
+    Boolean ShowCaptionMaximizeButton 'get set' : 
+    XtremeDockingPane.DockingContextStickerStyle StickerStyle 'get set' : 
+    XtremeDockingPane.DockingPaneCaptionDirection CaptionDirection 'get set' : 
+    Int32 AutoHideAnimationInterval 'get set' : 
+    Int32 AutoHideAnimationDuration 'get set' : 
+    Int32 AutoHideMouseHoverDelay 'get set' : 
+    Int32 AutoHideInactiveCollapseDelay 'get set' : 
+    Boolean ShowFloatingFramePinButton 'get set' : 
+    Boolean ShowContentsWhileDragging 'get set' : 
+    Boolean ShowSizeCursorWhileDragging 'get set' : 
+    Int32 ClientMargin 'get set' : 
+    Boolean StickyFloatingFrames 'get set' : 
+    Int32 FloatingFramesOpacity 'get set' : 
+    Boolean SideDocking 'get set' : 
+    Boolean ShowPanelScrollButtons 'get set' : 
+  Methods:
+    get_AutoHideAnimationInterval(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AutoHideAnimationInterval(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AutoHideAnimationDuration(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AutoHideAnimationDuration(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AutoHideMouseHoverDelay(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AutoHideMouseHoverDelay(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AutoHideInactiveCollapseDelay(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AutoHideInactiveCollapseDelay(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowFloatingFramePinButton(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowFloatingFramePinButton(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowContentsWhileDragging(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowContentsWhileDragging(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowSizeCursorWhileDragging(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowSizeCursorWhileDragging(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ClientMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ClientMargin(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_StickyFloatingFrames(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_StickyFloatingFrames(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FloatingFramesOpacity(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_FloatingFramesOpacity(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SideDocking(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SideDocking(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowPanelScrollButtons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowPanelScrollButtons(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SetSideDockingMargin(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_LunaColors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_LunaColors(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AnimationDelay(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AnimationDelay(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HideClient(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_HideClient(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_UseSplitterTracker(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_UseSplitterTracker(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LockSplitters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_LockSplitters(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ThemedFloatingFrames(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ThemedFloatingFrames(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FloatingFrameCaption(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_FloatingFrameCaption(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AlphaDockingContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AlphaDockingContext(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowDockingContextStickers(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowDockingContextStickers(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DefaultPaneOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DefaultPaneOptions(PaneOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CloseGroupOnButtonClick(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CloseGroupOnButtonClick(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HideGroupOnButtonClick(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_HideGroupOnButtonClick(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SyncActiveFloatingFrames(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SyncActiveFloatingFrames(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowCaptionMaximizeButton(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowCaptionMaximizeButton(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_StickerStyle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_StickerStyle(DockingContextStickerStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CaptionDirection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CaptionDirection(DockingPaneCaptionDirection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class XtremeDockingPane.DockingPaneOptionsClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.IDockingPaneOptions
+    XtremeDockingPane.DockingPaneOptions
+  Properties:
+    Boolean LunaColors 'get set' : 
+    Double AnimationDelay 'get set' : 
+    Boolean HideClient 'get set' : 
+    Boolean UseSplitterTracker 'get set' : 
+    Boolean LockSplitters 'get set' : 
+    Boolean ThemedFloatingFrames 'get set' : 
+    System.String FloatingFrameCaption 'get set' : 
+    Boolean AlphaDockingContext 'get set' : 
+    Boolean ShowDockingContextStickers 'get set' : 
+    XtremeDockingPane.PaneOptions DefaultPaneOptions 'get set' : 
+    Boolean CloseGroupOnButtonClick 'get set' : 
+    Boolean HideGroupOnButtonClick 'get set' : 
+    Boolean SyncActiveFloatingFrames 'get set' : 
+    Boolean ShowCaptionMaximizeButton 'get set' : 
+    XtremeDockingPane.DockingContextStickerStyle StickerStyle 'get set' : 
+    XtremeDockingPane.DockingPaneCaptionDirection CaptionDirection 'get set' : 
+    Int32 AutoHideAnimationInterval 'get set' : 
+    Int32 AutoHideAnimationDuration 'get set' : 
+    Int32 AutoHideMouseHoverDelay 'get set' : 
+    Int32 AutoHideInactiveCollapseDelay 'get set' : 
+    Boolean ShowFloatingFramePinButton 'get set' : 
+    Boolean ShowContentsWhileDragging 'get set' : 
+    Boolean ShowSizeCursorWhileDragging 'get set' : 
+    Int32 ClientMargin 'get set' : 
+    Boolean StickyFloatingFrames 'get set' : 
+    Int32 FloatingFramesOpacity 'get set' : 
+    Boolean SideDocking 'get set' : 
+    Boolean ShowPanelScrollButtons 'get set' : 
+  Methods:
+    get_FloatingFramesOpacity(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_FloatingFramesOpacity(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SideDocking(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SideDocking(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowPanelScrollButtons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowPanelScrollButtons(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SetSideDockingMargin(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    set_SyncActiveFloatingFrames(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowCaptionMaximizeButton(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowCaptionMaximizeButton(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_StickerStyle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_StickerStyle(DockingContextStickerStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CaptionDirection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CaptionDirection(DockingPaneCaptionDirection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AutoHideAnimationInterval(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AutoHideAnimationInterval(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AutoHideAnimationDuration(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AutoHideAnimationDuration(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AutoHideMouseHoverDelay(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AutoHideMouseHoverDelay(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AutoHideInactiveCollapseDelay(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AutoHideInactiveCollapseDelay(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowFloatingFramePinButton(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowFloatingFramePinButton(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowContentsWhileDragging(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowContentsWhileDragging(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowSizeCursorWhileDragging(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowSizeCursorWhileDragging(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ClientMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ClientMargin(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_StickyFloatingFrames(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_StickyFloatingFrames(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LunaColors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_LunaColors(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AnimationDelay(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AnimationDelay(Double): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HideClient(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_HideClient(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_UseSplitterTracker(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_UseSplitterTracker(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LockSplitters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_LockSplitters(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ThemedFloatingFrames(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ThemedFloatingFrames(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_FloatingFrameCaption(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_FloatingFrameCaption(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AlphaDockingContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AlphaDockingContext(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowDockingContextStickers(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowDockingContextStickers(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DefaultPaneOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DefaultPaneOptions(PaneOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CloseGroupOnButtonClick(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CloseGroupOnButtonClick(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HideGroupOnButtonClick(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_HideGroupOnButtonClick(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_SyncActiveFloatingFrames(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface XtremeDockingPane.DockingPaneOptions: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.IDockingPaneOptions
+Interface XtremeDockingPane.IPaneActionContainer: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    XtremeDockingPane.PaneContainer Container 'get ' : 
+    XtremeDockingPane.DockingDirection Direction 'get ' : 
+  Methods:
+    get_Container(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Direction(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class XtremeDockingPane.PaneActionContainerClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeDockingPane.IPaneActionContainer
+    XtremeDockingPane.PaneActionContainer
+  Properties:
+    XtremeDockingPane.PaneContainer Container 'get ' : 
+    XtremeDockingPane.DockingDirection Direction 'get ' : 
+  Methods:
+    get_Container(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Direction(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface XtremeDockingPane.PaneActionContainer: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.IPaneActionContainer
+Interface XtremeDockingPane._DDockingPane: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    XtremeDockingPane.VisualTheme VisualTheme 'get set' : 
+    System.Object ImageList 'get set' : 
+    XtremeDockingPane.XTPScaleMode ScaleMode 'get set' : 
+    XtremeDockingPane.ImageManagerIcons Icons 'get set' : 
+    XtremeDockingPane.DockingPaneOptions Options 'get ' : 
+    Int32 PanesCount 'get ' : 
+    XtremeDockingPane.TabPaintManager TabPaintManager 'get ' : 
+    XtremeDockingPane.TabPaintManager PanelPaintManager 'get ' : 
+    XtremeDockingPane.Pane Panes [Int32] 'get ' : 
+    XtremeDockingPane.DockingPanePaintManager PaintManager 'get ' : 
+    XtremeDockingPane.Pane ActivePane 'get ' : 
+    XtremeDockingPane.ToolTipContext ToolTipContext 'get ' : 
+    XtremeDockingPane.DockingPaneLayout Layout 'get ' : 
+  Methods:
+    NormalizeSplitters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_PaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActivePane(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ToolTipContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CreateLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetLayout(DockingPaneLayout(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetLayout(DockingPaneLayout(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetMDIClient(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UpdatePanes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AttachToWindow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DockPane(Pane(In, HasFieldMarshal), Int32(In), Int32(In), DockingDirection(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EnableKeyboardNavigate(DockingPaneKeyboardNavigate): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Layout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    DockSidePane(Pane(In, HasFieldMarshal), Int32(In), DockingDirection(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_VisualTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_VisualTheme(VisualTheme): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ImageList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ImageList(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ScaleMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ScaleMode(XTPScaleMode): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Icons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Icons(ImageManagerIcons): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CreatePane(Int32(In), Int32(In), Int32(In), DockingDirection(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AttachPane(Pane(In, HasFieldMarshal), Pane(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    HidePane(Pane(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ShowPane(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindPane(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetClientRect(Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RecalcLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SaveState(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadState(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetCommandBars(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddIconHandle(Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Options(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    LoadStateFromString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SaveStateToString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RedrawPanes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DestroyPane(Pane(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DestroyAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CloseAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_PanesCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabPaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PanelPaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Panes(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FloatPane(Pane(In, HasFieldMarshal), Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface XtremeDockingPane._DDockingPaneEvents: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    AttachPane(Pane(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetClientBordersWidth(Int32&, Int32&, Int32&, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Resize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Action(DockingPaneAction, Pane(HasFieldMarshal), PaneActionContainer(HasFieldMarshal), Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ResizeClient(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RClick(Pane(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PanePopupMenu(Pane(HasFieldMarshal), Int32, Int32, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class XtremeDockingPane.DockingPaneClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    XtremeDockingPane._DDockingPane
+    System.Collections.IEnumerable
+    XtremeDockingPane.DockingPane
+    XtremeDockingPane._DDockingPaneEvents_Event
+  Properties:
+    XtremeDockingPane.VisualTheme VisualTheme 'get set' : 
+    System.Object ImageList 'get set' : 
+    XtremeDockingPane.XTPScaleMode ScaleMode 'get set' : 
+    XtremeDockingPane.ImageManagerIcons Icons 'get set' : 
+    XtremeDockingPane.DockingPaneOptions Options 'get ' : 
+    Int32 PanesCount 'get ' : 
+    XtremeDockingPane.TabPaintManager TabPaintManager 'get ' : 
+    XtremeDockingPane.TabPaintManager PanelPaintManager 'get ' : 
+    XtremeDockingPane.Pane Panes [Int32] 'get ' : 
+    XtremeDockingPane.DockingPanePaintManager PaintManager 'get ' : 
+    XtremeDockingPane.Pane ActivePane 'get ' : 
+    XtremeDockingPane.ToolTipContext ToolTipContext 'get ' : 
+    XtremeDockingPane.DockingPaneLayout Layout 'get ' : 
+  Events:
+    XtremeDockingPane._DDockingPaneEvents_AttachPaneEventHandler _DDockingPaneEvents_Event_AttachPane: 
+    XtremeDockingPane._DDockingPaneEvents_GetClientBordersWidthEventHandler GetClientBordersWidth: 
+    XtremeDockingPane._DDockingPaneEvents_ResizeEventHandler Resize: 
+    XtremeDockingPane._DDockingPaneEvents_ActionEventHandler Action: 
+    XtremeDockingPane._DDockingPaneEvents_ResizeClientEventHandler ResizeClient: 
+    XtremeDockingPane._DDockingPaneEvents_RClickEventHandler RClick: 
+    XtremeDockingPane._DDockingPaneEvents_PanePopupMenuEventHandler PanePopupMenu: 
+  Methods:
+    remove_GetClientBordersWidth(_DDockingPaneEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_Resize(_DDockingPaneEvents_ResizeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_Resize(_DDockingPaneEvents_ResizeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_Action(_DDockingPaneEvents_ActionEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_Action(_DDockingPaneEvents_ActionEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_ResizeClient(_DDockingPaneEvents_ResizeClientEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_ResizeClient(_DDockingPaneEvents_ResizeClientEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_RClick(_DDockingPaneEvents_RClickEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_RClick(_DDockingPaneEvents_RClickEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_PanePopupMenu(_DDockingPaneEvents_PanePopupMenuEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_PanePopupMenu(_DDockingPaneEvents_PanePopupMenuEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CloseAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_PanesCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabPaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PanelPaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Panes(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FloatPane(Pane(In, HasFieldMarshal), Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    NormalizeSplitters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_PaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivePane(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ToolTipContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CreateLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetLayout(DockingPaneLayout(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetLayout(DockingPaneLayout(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetMDIClient(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UpdatePanes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachToWindow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DockPane(Pane(In, HasFieldMarshal), Int32(In), Int32(In), DockingDirection(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableKeyboardNavigate(DockingPaneKeyboardNavigate): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Layout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    DockSidePane(Pane(In, HasFieldMarshal), Int32(In), DockingDirection(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_AttachPane(_DDockingPaneEvents_AttachPaneEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_AttachPane(_DDockingPaneEvents_AttachPaneEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_GetClientBordersWidth(_DDockingPaneEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_VisualTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_VisualTheme(VisualTheme): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ImageList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ImageList(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ScaleMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ScaleMode(XTPScaleMode): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Icons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Icons(ImageManagerIcons): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CreatePane(Int32(In), Int32(In), Int32(In), DockingDirection(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachPane(Pane(In, HasFieldMarshal), Pane(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    HidePane(Pane(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ShowPane(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindPane(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetClientRect(Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RecalcLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveState(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadState(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetCommandBars(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddIconHandle(Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Options(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    LoadStateFromString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveStateToString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RedrawPanes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DestroyPane(Pane(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DestroyAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface XtremeDockingPane._DDockingPaneEvents_Event: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Events:
+    XtremeDockingPane._DDockingPaneEvents_AttachPaneEventHandler AttachPane: 
+    XtremeDockingPane._DDockingPaneEvents_GetClientBordersWidthEventHandler GetClientBordersWidth: 
+    XtremeDockingPane._DDockingPaneEvents_ResizeEventHandler Resize: 
+    XtremeDockingPane._DDockingPaneEvents_ActionEventHandler Action: 
+    XtremeDockingPane._DDockingPaneEvents_ResizeClientEventHandler ResizeClient: 
+    XtremeDockingPane._DDockingPaneEvents_RClickEventHandler RClick: 
+    XtremeDockingPane._DDockingPaneEvents_PanePopupMenuEventHandler PanePopupMenu: 
+  Methods:
+    add_AttachPane(_DDockingPaneEvents_AttachPaneEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_AttachPane(_DDockingPaneEvents_AttachPaneEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_GetClientBordersWidth(_DDockingPaneEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_GetClientBordersWidth(_DDockingPaneEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_Resize(_DDockingPaneEvents_ResizeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_Resize(_DDockingPaneEvents_ResizeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_Action(_DDockingPaneEvents_ActionEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_Action(_DDockingPaneEvents_ActionEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_ResizeClient(_DDockingPaneEvents_ResizeClientEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_ResizeClient(_DDockingPaneEvents_ResizeClientEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_RClick(_DDockingPaneEvents_RClickEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_RClick(_DDockingPaneEvents_RClickEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_PanePopupMenu(_DDockingPaneEvents_PanePopupMenuEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_PanePopupMenu(_DDockingPaneEvents_PanePopupMenuEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class XtremeDockingPane._DDockingPaneEvents_AttachPaneEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Pane(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class XtremeDockingPane._DDockingPaneEvents_GetClientBordersWidthEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32&, Int32&, Int32&, Int32&): PrivateScope, Public, Virtual
+Class XtremeDockingPane._DDockingPaneEvents_ResizeEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual
+Class XtremeDockingPane._DDockingPaneEvents_ActionEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(DockingPaneAction, Pane(HasFieldMarshal), PaneActionContainer(HasFieldMarshal), Boolean&): PrivateScope, Public, Virtual
+Class XtremeDockingPane._DDockingPaneEvents_ResizeClientEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual
+Class XtremeDockingPane._DDockingPaneEvents_RClickEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Pane(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class XtremeDockingPane._DDockingPaneEvents_PanePopupMenuEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Pane(HasFieldMarshal), Int32, Int32, Boolean&): PrivateScope, Public, Virtual
+Interface XtremeDockingPane.DockingPane: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane._DDockingPane
+    System.Collections.IEnumerable
+    XtremeDockingPane._DDockingPaneEvents_Event
+Interface XtremeDockingPane._DDockingPaneFrame: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    XtremeDockingPane.VisualTheme VisualTheme 'get set' : 
+    System.Object ImageList 'get set' : 
+    XtremeDockingPane.XTPScaleMode ScaleMode 'get set' : 
+    XtremeDockingPane.ImageManagerIcons Icons 'get set' : 
+    XtremeDockingPane.DockingPaneOptions Options 'get ' : 
+    Int32 PanesCount 'get ' : 
+    XtremeDockingPane.TabPaintManager TabPaintManager 'get ' : 
+    XtremeDockingPane.TabPaintManager PanelPaintManager 'get ' : 
+    XtremeDockingPane.Pane Panes [Int32] 'get ' : 
+    XtremeDockingPane.DockingPanePaintManager PaintManager 'get ' : 
+    XtremeDockingPane.Pane ActivePane 'get ' : 
+    XtremeDockingPane.ToolTipContext ToolTipContext 'get ' : 
+    XtremeDockingPane.DockingPaneLayout Layout 'get ' : 
+  Methods:
+    NormalizeSplitters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_PaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActivePane(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ToolTipContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CreateLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetLayout(DockingPaneLayout(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetLayout(DockingPaneLayout(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetMDIClient(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UpdatePanes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AttachToWindow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DockPane(Pane(In, HasFieldMarshal), Int32(In), Int32(In), DockingDirection(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    EnableKeyboardNavigate(DockingPaneKeyboardNavigate): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Layout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    DockSidePane(Pane(In, HasFieldMarshal), Int32(In), DockingDirection(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_VisualTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_VisualTheme(VisualTheme): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ImageList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ImageList(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ScaleMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ScaleMode(XTPScaleMode): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Icons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Icons(ImageManagerIcons): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CreatePane(Int32(In), Int32(In), Int32(In), DockingDirection(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AttachPane(Pane(In, HasFieldMarshal), Pane(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    HidePane(Pane(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ShowPane(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FindPane(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetClientRect(Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RecalcLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SaveState(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadState(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetCommandBars(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddIconHandle(Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Options(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    LoadStateFromString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SaveStateToString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RedrawPanes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DestroyPane(Pane(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    DestroyAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CloseAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_PanesCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabPaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PanelPaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Panes(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    FloatPane(Pane(In, HasFieldMarshal), Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface XtremeDockingPane._DDockingPaneFrameEvents: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    AttachPane(Pane(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetClientBordersWidth(Int32&, Int32&, Int32&, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Resize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Action(DockingPaneAction, Pane(HasFieldMarshal), PaneActionContainer(HasFieldMarshal), Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ResizeClient(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RClick(Pane(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PanePopupMenu(Pane(HasFieldMarshal), Int32, Int32, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class XtremeDockingPane.DockingPaneFrameClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    XtremeDockingPane._DDockingPaneFrame
+    System.Collections.IEnumerable
+    XtremeDockingPane.DockingPaneFrame
+    XtremeDockingPane._DDockingPaneFrameEvents_Event
+  Properties:
+    XtremeDockingPane.VisualTheme VisualTheme 'get set' : 
+    System.Object ImageList 'get set' : 
+    XtremeDockingPane.XTPScaleMode ScaleMode 'get set' : 
+    XtremeDockingPane.ImageManagerIcons Icons 'get set' : 
+    XtremeDockingPane.DockingPaneOptions Options 'get ' : 
+    Int32 PanesCount 'get ' : 
+    XtremeDockingPane.TabPaintManager TabPaintManager 'get ' : 
+    XtremeDockingPane.TabPaintManager PanelPaintManager 'get ' : 
+    XtremeDockingPane.Pane Panes [Int32] 'get ' : 
+    XtremeDockingPane.DockingPanePaintManager PaintManager 'get ' : 
+    XtremeDockingPane.Pane ActivePane 'get ' : 
+    XtremeDockingPane.ToolTipContext ToolTipContext 'get ' : 
+    XtremeDockingPane.DockingPaneLayout Layout 'get ' : 
+  Events:
+    XtremeDockingPane._DDockingPaneFrameEvents_AttachPaneEventHandler _DDockingPaneFrameEvents_Event_AttachPane: 
+    XtremeDockingPane._DDockingPaneFrameEvents_GetClientBordersWidthEventHandler GetClientBordersWidth: 
+    XtremeDockingPane._DDockingPaneFrameEvents_ResizeEventHandler Resize: 
+    XtremeDockingPane._DDockingPaneFrameEvents_ActionEventHandler Action: 
+    XtremeDockingPane._DDockingPaneFrameEvents_ResizeClientEventHandler ResizeClient: 
+    XtremeDockingPane._DDockingPaneFrameEvents_RClickEventHandler RClick: 
+    XtremeDockingPane._DDockingPaneFrameEvents_PanePopupMenuEventHandler PanePopupMenu: 
+  Methods:
+    remove_GetClientBordersWidth(_DDockingPaneFrameEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_Resize(_DDockingPaneFrameEvents_ResizeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_Resize(_DDockingPaneFrameEvents_ResizeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_Action(_DDockingPaneFrameEvents_ActionEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_Action(_DDockingPaneFrameEvents_ActionEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_ResizeClient(_DDockingPaneFrameEvents_ResizeClientEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_ResizeClient(_DDockingPaneFrameEvents_ResizeClientEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_RClick(_DDockingPaneFrameEvents_RClickEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_RClick(_DDockingPaneFrameEvents_RClickEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_PanePopupMenu(_DDockingPaneFrameEvents_PanePopupMenuEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_PanePopupMenu(_DDockingPaneFrameEvents_PanePopupMenuEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CloseAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_PanesCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabPaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PanelPaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Panes(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FloatPane(Pane(In, HasFieldMarshal), Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    NormalizeSplitters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_PaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivePane(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ToolTipContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CreateLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetLayout(DockingPaneLayout(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetLayout(DockingPaneLayout(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetMDIClient(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UpdatePanes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachToWindow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DockPane(Pane(In, HasFieldMarshal), Int32(In), Int32(In), DockingDirection(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableKeyboardNavigate(DockingPaneKeyboardNavigate): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Layout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    DockSidePane(Pane(In, HasFieldMarshal), Int32(In), DockingDirection(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_AttachPane(_DDockingPaneFrameEvents_AttachPaneEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_AttachPane(_DDockingPaneFrameEvents_AttachPaneEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_GetClientBordersWidth(_DDockingPaneFrameEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_VisualTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_VisualTheme(VisualTheme): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ImageList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ImageList(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ScaleMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ScaleMode(XTPScaleMode): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Icons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Icons(ImageManagerIcons): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CreatePane(Int32(In), Int32(In), Int32(In), DockingDirection(In), Object(In, Optional, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachPane(Pane(In, HasFieldMarshal), Pane(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    HidePane(Pane(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ShowPane(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindPane(Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetClientRect(Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RecalcLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveState(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadState(String(In, HasFieldMarshal), String(In, HasFieldMarshal), String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetCommandBars(Object(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddIconHandle(Int32(In), Int32(In)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Options(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    LoadStateFromString(String(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveStateToString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RedrawPanes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DestroyPane(Pane(In, HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DestroyAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface XtremeDockingPane._DDockingPaneFrameEvents_Event: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Events:
+    XtremeDockingPane._DDockingPaneFrameEvents_AttachPaneEventHandler AttachPane: 
+    XtremeDockingPane._DDockingPaneFrameEvents_GetClientBordersWidthEventHandler GetClientBordersWidth: 
+    XtremeDockingPane._DDockingPaneFrameEvents_ResizeEventHandler Resize: 
+    XtremeDockingPane._DDockingPaneFrameEvents_ActionEventHandler Action: 
+    XtremeDockingPane._DDockingPaneFrameEvents_ResizeClientEventHandler ResizeClient: 
+    XtremeDockingPane._DDockingPaneFrameEvents_RClickEventHandler RClick: 
+    XtremeDockingPane._DDockingPaneFrameEvents_PanePopupMenuEventHandler PanePopupMenu: 
+  Methods:
+    add_AttachPane(_DDockingPaneFrameEvents_AttachPaneEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_AttachPane(_DDockingPaneFrameEvents_AttachPaneEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_GetClientBordersWidth(_DDockingPaneFrameEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_GetClientBordersWidth(_DDockingPaneFrameEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_Resize(_DDockingPaneFrameEvents_ResizeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_Resize(_DDockingPaneFrameEvents_ResizeEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_Action(_DDockingPaneFrameEvents_ActionEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_Action(_DDockingPaneFrameEvents_ActionEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_ResizeClient(_DDockingPaneFrameEvents_ResizeClientEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_ResizeClient(_DDockingPaneFrameEvents_ResizeClientEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_RClick(_DDockingPaneFrameEvents_RClickEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_RClick(_DDockingPaneFrameEvents_RClickEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_PanePopupMenu(_DDockingPaneFrameEvents_PanePopupMenuEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_PanePopupMenu(_DDockingPaneFrameEvents_PanePopupMenuEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class XtremeDockingPane._DDockingPaneFrameEvents_AttachPaneEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Pane(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class XtremeDockingPane._DDockingPaneFrameEvents_GetClientBordersWidthEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32&, Int32&, Int32&, Int32&): PrivateScope, Public, Virtual
+Class XtremeDockingPane._DDockingPaneFrameEvents_ResizeEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual
+Class XtremeDockingPane._DDockingPaneFrameEvents_ActionEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(DockingPaneAction, Pane(HasFieldMarshal), PaneActionContainer(HasFieldMarshal), Boolean&): PrivateScope, Public, Virtual
+Class XtremeDockingPane._DDockingPaneFrameEvents_ResizeClientEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual
+Class XtremeDockingPane._DDockingPaneFrameEvents_RClickEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Pane(HasFieldMarshal)): PrivateScope, Public, Virtual
+Class XtremeDockingPane._DDockingPaneFrameEvents_PanePopupMenuEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Pane(HasFieldMarshal), Int32, Int32, Boolean&): PrivateScope, Public, Virtual
+Interface XtremeDockingPane.DockingPaneFrame: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane._DDockingPaneFrame
+    System.Collections.IEnumerable
+    XtremeDockingPane._DDockingPaneFrameEvents_Event
+Interface XtremeDockingPane.IDockingPaneGlobalSettings: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String ResourceFile 'get set' : 
+    System.String License 'get set' : 
+    System.String Title 'get set' : 
+    System.String Office2007Images 'get set' : 
+    XtremeDockingPane.ColorManager ColorManager 'get ' : 
+    System.String Version 'get ' : 
+    Boolean Unicode 'get ' : 
+    System.String OcxPath 'get ' : 
+    XtremeDockingPane.ImageManagerIcons Icons 'get ' : 
+  Methods:
+    get_ResourceFile(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ResourceFile(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_License(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_License(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Title(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Title(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Office2007Images(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Office2007Images(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ColorManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Version(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Unicode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_OcxPath(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    CreatePropExchange(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_Icons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Class XtremeDockingPane.DockingPaneGlobalSettingsClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    XtremeDockingPane.IDockingPaneGlobalSettings
+    XtremeDockingPane.DockingPaneGlobalSettings
+  Properties:
+    System.String ResourceFile 'get set' : 
+    System.String License 'get set' : 
+    System.String Title 'get set' : 
+    System.String Office2007Images 'get set' : 
+    XtremeDockingPane.ColorManager ColorManager 'get ' : 
+    System.String Version 'get ' : 
+    Boolean Unicode 'get ' : 
+    System.String OcxPath 'get ' : 
+    XtremeDockingPane.ImageManagerIcons Icons 'get ' : 
+  Methods:
+    get_ResourceFile(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ResourceFile(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_License(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_License(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Title(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Title(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Office2007Images(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Office2007Images(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ColorManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Version(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Unicode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OcxPath(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    CreatePropExchange(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_Icons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface XtremeDockingPane.DockingPaneGlobalSettings: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeDockingPane.IDockingPaneGlobalSettings
+Class XtremeDockingPane._DDockingPaneEvents_SinkHelper: AutoLayout, AnsiClass, Class, Public, Sealed
+  Interfaces:
+    XtremeDockingPane._DDockingPaneEvents
+  Fields:
+    XtremeDockingPane._DDockingPaneEvents_AttachPaneEventHandler m_AttachPaneDelegate : Public
+    XtremeDockingPane._DDockingPaneEvents_GetClientBordersWidthEventHandler m_GetClientBordersWidthDelegate : Public
+    XtremeDockingPane._DDockingPaneEvents_ResizeEventHandler m_ResizeDelegate : Public
+    XtremeDockingPane._DDockingPaneEvents_ActionEventHandler m_ActionDelegate : Public
+    XtremeDockingPane._DDockingPaneEvents_ResizeClientEventHandler m_ResizeClientDelegate : Public
+    XtremeDockingPane._DDockingPaneEvents_RClickEventHandler m_RClickDelegate : Public
+    XtremeDockingPane._DDockingPaneEvents_PanePopupMenuEventHandler m_PanePopupMenuDelegate : Public
+    Int32 m_dwCookie : Public
+  Methods:
+    AttachPane(Pane): PrivateScope, Public, Virtual
+    GetClientBordersWidth(Int32&, Int32&, Int32&, Int32&): PrivateScope, Public, Virtual
+    Resize(): PrivateScope, Public, Virtual
+    Action(DockingPaneAction, Pane, PaneActionContainer, Boolean&): PrivateScope, Public, Virtual
+    ResizeClient(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual
+    RClick(Pane): PrivateScope, Public, Virtual
+    PanePopupMenu(Pane, Int32, Int32, Boolean&): PrivateScope, Public, Virtual
+Class XtremeDockingPane._DDockingPaneFrameEvents_SinkHelper: AutoLayout, AnsiClass, Class, Public, Sealed
+  Interfaces:
+    XtremeDockingPane._DDockingPaneFrameEvents
+  Fields:
+    XtremeDockingPane._DDockingPaneFrameEvents_AttachPaneEventHandler m_AttachPaneDelegate : Public
+    XtremeDockingPane._DDockingPaneFrameEvents_GetClientBordersWidthEventHandler m_GetClientBordersWidthDelegate : Public
+    XtremeDockingPane._DDockingPaneFrameEvents_ResizeEventHandler m_ResizeDelegate : Public
+    XtremeDockingPane._DDockingPaneFrameEvents_ActionEventHandler m_ActionDelegate : Public
+    XtremeDockingPane._DDockingPaneFrameEvents_ResizeClientEventHandler m_ResizeClientDelegate : Public
+    XtremeDockingPane._DDockingPaneFrameEvents_RClickEventHandler m_RClickDelegate : Public
+    XtremeDockingPane._DDockingPaneFrameEvents_PanePopupMenuEventHandler m_PanePopupMenuDelegate : Public
+    Int32 m_dwCookie : Public
+  Methods:
+    AttachPane(Pane): PrivateScope, Public, Virtual
+    GetClientBordersWidth(Int32&, Int32&, Int32&, Int32&): PrivateScope, Public, Virtual
+    Resize(): PrivateScope, Public, Virtual
+    Action(DockingPaneAction, Pane, PaneActionContainer, Boolean&): PrivateScope, Public, Virtual
+    ResizeClient(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual
+    RClick(Pane): PrivateScope, Public, Virtual
+    PanePopupMenu(Pane, Int32, Int32, Boolean&): PrivateScope, Public, Virtual

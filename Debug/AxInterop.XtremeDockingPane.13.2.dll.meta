@@ -1,0 +1,372 @@
+Assembly AxInterop.XtremeDockingPane.13.2, Version=13.2.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly Interop.XtremeDockingPane.13.2, Version=13.2.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Class AxXtremeDockingPane.AxDockingPane: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.AxHost
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    XtremeDockingPane.VisualTheme VisualTheme 'get set' : 
+    System.Object ImageList 'get set' : 
+    XtremeDockingPane.XTPScaleMode ScaleMode 'get set' : 
+    XtremeDockingPane.ImageManagerIcons Icons 'get set' : 
+    XtremeDockingPane.DockingPaneOptions Options 'get ' : 
+    Int32 PanesCount 'get ' : 
+    XtremeDockingPane.TabPaintManager TabPaintManager 'get ' : 
+    XtremeDockingPane.TabPaintManager PanelPaintManager 'get ' : 
+    XtremeDockingPane.Pane Panes [Int32] 'get ' : 
+    XtremeDockingPane.DockingPanePaintManager PaintManager 'get ' : 
+    XtremeDockingPane.Pane ActivePane 'get ' : 
+    XtremeDockingPane.ToolTipContext ToolTipContext 'get ' : 
+    XtremeDockingPane.DockingPaneLayout CtlLayout 'get ' : 
+  Events:
+    AxXtremeDockingPane._DDockingPaneEvents_AttachPaneEventHandler AttachPaneEvent: 
+    AxXtremeDockingPane._DDockingPaneEvents_GetClientBordersWidthEventHandler GetClientBordersWidth: 
+    System.EventHandler ResizeEvent: 
+    AxXtremeDockingPane._DDockingPaneEvents_ActionEventHandler Action: 
+    AxXtremeDockingPane._DDockingPaneEvents_ResizeClientEventHandler ResizeClient: 
+    AxXtremeDockingPane._DDockingPaneEvents_RClickEventHandler RClick: 
+    AxXtremeDockingPane._DDockingPaneEvents_PanePopupMenuEventHandler PanePopupMenu: 
+  Methods:
+    get_VisualTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_VisualTheme(VisualTheme): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ImageList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ImageList(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ScaleMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ScaleMode(XTPScaleMode): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Icons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Icons(ImageManagerIcons): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Options(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PanesCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabPaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PanelPaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Panes(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivePane(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ToolTipContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CtlLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    add_AttachPaneEvent(_DDockingPaneEvents_AttachPaneEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_AttachPaneEvent(_DDockingPaneEvents_AttachPaneEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_GetClientBordersWidth(_DDockingPaneEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_GetClientBordersWidth(_DDockingPaneEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ResizeEvent(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ResizeEvent(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Action(_DDockingPaneEvents_ActionEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Action(_DDockingPaneEvents_ActionEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ResizeClient(_DDockingPaneEvents_ResizeClientEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ResizeClient(_DDockingPaneEvents_ResizeClientEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RClick(_DDockingPaneEvents_RClickEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RClick(_DDockingPaneEvents_RClickEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_PanePopupMenu(_DDockingPaneEvents_PanePopupMenuEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_PanePopupMenu(_DDockingPaneEvents_PanePopupMenuEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    NormalizeSplitters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetLayout(DockingPaneLayout): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetLayout(DockingPaneLayout): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetMDIClient(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UpdatePanes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachToWindow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DockPane(Pane, Int32, Int32, DockingDirection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DockPane(Pane, Int32, Int32, DockingDirection, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableKeyboardNavigate(DockingPaneKeyboardNavigate): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DockSidePane(Pane, Int32, DockingDirection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreatePane(Int32, Int32, Int32, DockingDirection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreatePane(Int32, Int32, Int32, DockingDirection, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachPane(Pane, Pane): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    HidePane(Pane): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ShowPane(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindPane(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetClientRect(Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RecalcLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveState(String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadState(String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetCommandBars(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddIconHandle(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadStateFromString(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveStateToString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RedrawPanes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DestroyPane(Pane): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DestroyAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CloseAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FloatPane(Pane, Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneEvents_AttachPaneEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DDockingPaneEvents_AttachPaneEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DDockingPaneEvents_AttachPaneEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneEvents_AttachPaneEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeDockingPane.Pane): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeDockingPane.Pane item : Public
+Class AxXtremeDockingPane._DDockingPaneEvents_GetClientBordersWidthEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DDockingPaneEvents_GetClientBordersWidthEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DDockingPaneEvents_GetClientBordersWidthEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneEvents_GetClientBordersWidthEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 left : Public
+    Int32 top : Public
+    Int32 right : Public
+    Int32 bottom : Public
+Class AxXtremeDockingPane._DDockingPaneEvents_ActionEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DDockingPaneEvents_ActionEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DDockingPaneEvents_ActionEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneEvents_ActionEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeDockingPane.DockingPaneAction, XtremeDockingPane.Pane, XtremeDockingPane.PaneActionContainer, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeDockingPane.DockingPaneAction action : Public
+    XtremeDockingPane.Pane pane : Public
+    XtremeDockingPane.PaneActionContainer container : Public
+    Boolean cancel : Public
+Class AxXtremeDockingPane._DDockingPaneEvents_ResizeClientEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DDockingPaneEvents_ResizeClientEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DDockingPaneEvents_ResizeClientEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneEvents_ResizeClientEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 left : Public
+    Int32 top : Public
+    Int32 right : Public
+    Int32 bottom : Public
+Class AxXtremeDockingPane._DDockingPaneEvents_RClickEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DDockingPaneEvents_RClickEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DDockingPaneEvents_RClickEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneEvents_RClickEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeDockingPane.Pane): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeDockingPane.Pane pane : Public
+Class AxXtremeDockingPane._DDockingPaneEvents_PanePopupMenuEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DDockingPaneEvents_PanePopupMenuEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DDockingPaneEvents_PanePopupMenuEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneEvents_PanePopupMenuEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeDockingPane.Pane, Int32, Int32, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeDockingPane.Pane pane : Public
+    Int32 x : Public
+    Int32 y : Public
+    Boolean handled : Public
+Class AxXtremeDockingPane.AxDockingPaneEventMulticaster: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(AxXtremeDockingPane.AxDockingPane): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    XtremeDockingPane._DDockingPaneEvents
+  Methods:
+    AttachPane(Pane): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetClientBordersWidth(Int32&, Int32&, Int32&, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Resize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Action(DockingPaneAction, Pane, PaneActionContainer, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ResizeClient(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RClick(Pane): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PanePopupMenu(Pane, Int32, Int32, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane.AxDockingPaneFrame: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.AxHost
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    XtremeDockingPane.VisualTheme VisualTheme 'get set' : 
+    System.Object ImageList 'get set' : 
+    XtremeDockingPane.XTPScaleMode ScaleMode 'get set' : 
+    XtremeDockingPane.ImageManagerIcons Icons 'get set' : 
+    XtremeDockingPane.DockingPaneOptions Options 'get ' : 
+    Int32 PanesCount 'get ' : 
+    XtremeDockingPane.TabPaintManager TabPaintManager 'get ' : 
+    XtremeDockingPane.TabPaintManager PanelPaintManager 'get ' : 
+    XtremeDockingPane.Pane Panes [Int32] 'get ' : 
+    XtremeDockingPane.DockingPanePaintManager PaintManager 'get ' : 
+    XtremeDockingPane.Pane ActivePane 'get ' : 
+    XtremeDockingPane.ToolTipContext ToolTipContext 'get ' : 
+    XtremeDockingPane.DockingPaneLayout CtlLayout 'get ' : 
+  Events:
+    AxXtremeDockingPane._DDockingPaneFrameEvents_AttachPaneEventHandler AttachPaneEvent: 
+    AxXtremeDockingPane._DDockingPaneFrameEvents_GetClientBordersWidthEventHandler GetClientBordersWidth: 
+    System.EventHandler ResizeEvent: 
+    AxXtremeDockingPane._DDockingPaneFrameEvents_ActionEventHandler Action: 
+    AxXtremeDockingPane._DDockingPaneFrameEvents_ResizeClientEventHandler ResizeClient: 
+    AxXtremeDockingPane._DDockingPaneFrameEvents_RClickEventHandler RClick: 
+    AxXtremeDockingPane._DDockingPaneFrameEvents_PanePopupMenuEventHandler PanePopupMenu: 
+  Methods:
+    get_VisualTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_VisualTheme(VisualTheme): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ImageList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ImageList(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ScaleMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ScaleMode(XTPScaleMode): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Icons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Icons(ImageManagerIcons): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Options(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PanesCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabPaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PanelPaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Panes(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivePane(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ToolTipContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CtlLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    add_AttachPaneEvent(_DDockingPaneFrameEvents_AttachPaneEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_AttachPaneEvent(_DDockingPaneFrameEvents_AttachPaneEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_GetClientBordersWidth(_DDockingPaneFrameEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_GetClientBordersWidth(_DDockingPaneFrameEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ResizeEvent(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ResizeEvent(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Action(_DDockingPaneFrameEvents_ActionEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Action(_DDockingPaneFrameEvents_ActionEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ResizeClient(_DDockingPaneFrameEvents_ResizeClientEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ResizeClient(_DDockingPaneFrameEvents_ResizeClientEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RClick(_DDockingPaneFrameEvents_RClickEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RClick(_DDockingPaneFrameEvents_RClickEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_PanePopupMenu(_DDockingPaneFrameEvents_PanePopupMenuEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_PanePopupMenu(_DDockingPaneFrameEvents_PanePopupMenuEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    NormalizeSplitters(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetLayout(DockingPaneLayout): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetLayout(DockingPaneLayout): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetMDIClient(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UpdatePanes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachToWindow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DockPane(Pane, Int32, Int32, DockingDirection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DockPane(Pane, Int32, Int32, DockingDirection, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableKeyboardNavigate(DockingPaneKeyboardNavigate): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DockSidePane(Pane, Int32, DockingDirection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreatePane(Int32, Int32, Int32, DockingDirection): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreatePane(Int32, Int32, Int32, DockingDirection, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachPane(Pane, Pane): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    HidePane(Pane): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ShowPane(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindPane(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetClientRect(Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RecalcLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveState(String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadState(String, String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetCommandBars(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddIconHandle(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadStateFromString(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveStateToString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RedrawPanes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DestroyPane(Pane): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DestroyAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CloseAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FloatPane(Pane, Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneFrameEvents_AttachPaneEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DDockingPaneFrameEvents_AttachPaneEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DDockingPaneFrameEvents_AttachPaneEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneFrameEvents_AttachPaneEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeDockingPane.Pane): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeDockingPane.Pane item : Public
+Class AxXtremeDockingPane._DDockingPaneFrameEvents_GetClientBordersWidthEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DDockingPaneFrameEvents_GetClientBordersWidthEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DDockingPaneFrameEvents_GetClientBordersWidthEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneFrameEvents_GetClientBordersWidthEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 left : Public
+    Int32 top : Public
+    Int32 right : Public
+    Int32 bottom : Public
+Class AxXtremeDockingPane._DDockingPaneFrameEvents_ActionEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DDockingPaneFrameEvents_ActionEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DDockingPaneFrameEvents_ActionEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneFrameEvents_ActionEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeDockingPane.DockingPaneAction, XtremeDockingPane.Pane, XtremeDockingPane.PaneActionContainer, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeDockingPane.DockingPaneAction action : Public
+    XtremeDockingPane.Pane pane : Public
+    XtremeDockingPane.PaneActionContainer container : Public
+    Boolean cancel : Public
+Class AxXtremeDockingPane._DDockingPaneFrameEvents_ResizeClientEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DDockingPaneFrameEvents_ResizeClientEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DDockingPaneFrameEvents_ResizeClientEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneFrameEvents_ResizeClientEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 left : Public
+    Int32 top : Public
+    Int32 right : Public
+    Int32 bottom : Public
+Class AxXtremeDockingPane._DDockingPaneFrameEvents_RClickEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DDockingPaneFrameEvents_RClickEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DDockingPaneFrameEvents_RClickEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneFrameEvents_RClickEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeDockingPane.Pane): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeDockingPane.Pane pane : Public
+Class AxXtremeDockingPane._DDockingPaneFrameEvents_PanePopupMenuEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DDockingPaneFrameEvents_PanePopupMenuEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DDockingPaneFrameEvents_PanePopupMenuEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeDockingPane._DDockingPaneFrameEvents_PanePopupMenuEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeDockingPane.Pane, Int32, Int32, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeDockingPane.Pane pane : Public
+    Int32 x : Public
+    Int32 y : Public
+    Boolean handled : Public
+Class AxXtremeDockingPane.AxDockingPaneFrameEventMulticaster: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(AxXtremeDockingPane.AxDockingPaneFrame): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    XtremeDockingPane._DDockingPaneFrameEvents
+  Methods:
+    AttachPane(Pane): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetClientBordersWidth(Int32&, Int32&, Int32&, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Resize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Action(DockingPaneAction, Pane, PaneActionContainer, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ResizeClient(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RClick(Pane): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PanePopupMenu(Pane, Int32, Int32, Boolean&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask

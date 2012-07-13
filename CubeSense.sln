@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CubeSense", "CubeSense.vcxproj", "{F96B7B40-E3AA-4B5A-9BF7-B20F9D5FB18C}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "CubesenseSetup", "..\CubesenseSetup\CubesenseSetup.vdproj", "{158E58AE-81B1-4814-B62D-5277D9EDC32B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DelconUsb", "DelconUsb\DelconUsb.vcxproj", "{76123A34-5017-47A2-BFDB-902AAD84ADC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F96B7B40-E3AA-4B5A-9BF7-B20F9D5FB18C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F96B7B40-E3AA-4B5A-9BF7-B20F9D5FB18C}.Debug|Win32.Build.0 = Debug|Win32
+		{F96B7B40-E3AA-4B5A-9BF7-B20F9D5FB18C}.Release|Win32.ActiveCfg = Release|Win32
+		{F96B7B40-E3AA-4B5A-9BF7-B20F9D5FB18C}.Release|Win32.Build.0 = Release|Win32
+		{158E58AE-81B1-4814-B62D-5277D9EDC32B}.Debug|Win32.ActiveCfg = Debug
+		{158E58AE-81B1-4814-B62D-5277D9EDC32B}.Release|Win32.ActiveCfg = Release
+		{76123A34-5017-47A2-BFDB-902AAD84ADC0}.Debug|Win32.ActiveCfg = Debug|Win32
+		{76123A34-5017-47A2-BFDB-902AAD84ADC0}.Debug|Win32.Build.0 = Debug|Win32
+		{76123A34-5017-47A2-BFDB-902AAD84ADC0}.Release|Win32.ActiveCfg = Release|Win32
+		{76123A34-5017-47A2-BFDB-902AAD84ADC0}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

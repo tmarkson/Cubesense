@@ -1,0 +1,29 @@
+class Script: scriptInterface.IScript
+{	
+	scriptInterface.IHost Cubesense;
+	public virtual void Initialize(scriptInterface.IHost Host)
+	{
+		Cubesense = Host;
+		Main();
+	}
+	public virtual void Main()
+	{
+		int x;
+		int y;
+		int z;
+		int f;
+		for(f=0;f<10000;f++)
+		{
+			for(x=0;x<8;x++)
+				for(y=0;y<8;y++)
+					for(z=0;z<8;z++)
+					{
+						cs.drawVoxel(f,x,y,z,32*x,32*y,32*z);
+						
+					}
+			cs.showProgress(f/100);
+		}
+
+
+	}
+}

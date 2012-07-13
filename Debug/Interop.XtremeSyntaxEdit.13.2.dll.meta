@@ -1,0 +1,871 @@
+Assembly Interop.XtremeSyntaxEdit.13.2, Version=13.2.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=None
+Struct XtremeSyntaxEdit.XTPImageState: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeSyntaxEdit.XTPImageState xtpImageNormal = 0 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPImageState xtpImageDisabled = 1 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPImageState xtpImageHot = 2 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPImageState xtpImageChecked = 3 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPImageState xtpImagePressed = 4 : Public, Static, Literal, HasDefault
+Interface XtremeSyntaxEdit.ImageManagerIcon: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 Id   'get ' : 
+    Int32 Width 'get ' : 
+    Int32 Height 'get ' : 
+    Boolean Scaled 'get ' : 
+    Boolean Alpha 'get ' : 
+    Int32 Handle 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Width(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Height(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Scaled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Alpha(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Handle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Draw(Int32, Int32, Int32, Int32, Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CreatePicture(XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Scale(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface XtremeSyntaxEdit.ImageManagerIconSet: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    Int32 Id   'get ' : 
+    Int32 Count 'get ' : 
+  Methods:
+    get_Id(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    GetImage(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface XtremeSyntaxEdit.IImageManagerIcons: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    Boolean DrawReverted 'get set' : 
+    UInt32 MaskColor 'get set' : 
+    Int32 Count 'get ' : 
+    Boolean IsAlphaIconsSupported 'get ' : 
+  Methods:
+    get_DrawReverted(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_DrawReverted(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MaskColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MaskColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    AddIcon(Int32, Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadIcon(String(HasFieldMarshal), Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddBitmap(Int32, Object(In, HasFieldMarshal), XTPImageState, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadBitmap(String(HasFieldMarshal), Object(In, HasFieldMarshal), XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadBitmapFromResource(Int32, Int32, Object(In, HasFieldMarshal), XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    LoadIconFromResource(Int32, Int32, Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RemoveAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddIcons(ImageManagerIcons(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RemoveIcon(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_IsAlphaIconsSupported(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    RefreshAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetImage(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class XtremeSyntaxEdit.ImageManagerIconsClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeSyntaxEdit.IImageManagerIcons
+    System.Collections.IEnumerable
+    XtremeSyntaxEdit.ImageManagerIcons
+  Properties:
+    Boolean DrawReverted 'get set' : 
+    UInt32 MaskColor 'get set' : 
+    Int32 Count 'get ' : 
+    Boolean IsAlphaIconsSupported 'get ' : 
+  Methods:
+    get_DrawReverted(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_DrawReverted(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MaskColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_MaskColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    AddIcon(Int32, Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadIcon(String(HasFieldMarshal), Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddBitmap(Int32, Object(In, HasFieldMarshal), XTPImageState, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadBitmap(String(HasFieldMarshal), Object(In, HasFieldMarshal), XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadBitmapFromResource(Int32, Int32, Object(In, HasFieldMarshal), XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadIconFromResource(Int32, Int32, Int32, XTPImageState): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddIcons(ImageManagerIcons(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveIcon(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_IsAlphaIconsSupported(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    RefreshAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetImage(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface XtremeSyntaxEdit.ImageManagerIcons: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeSyntaxEdit.IImageManagerIcons
+    System.Collections.IEnumerable
+Struct XtremeSyntaxEdit.XTPColorManagerColor: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_BACKGROUND = 1 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_ACTIVECAPTION = 2 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_INACTIVECAPTION = 3 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_MENU = 4 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_WINDOW = 5 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_WINDOWFRAME = 6 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_MENUTEXT = 7 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_WINDOWTEXT = 8 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_CAPTIONTEXT = 9 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_ACTIVEBORDER = 10 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_INACTIVEBORDER = 11 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_APPWORKSPACE = 12 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_HIGHLIGHT = 13 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_HIGHLIGHTTEXT = 14 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_BTNFACE = 15 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_BTNSHADOW = 16 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_GRAYTEXT = 17 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_BTNTEXT = 18 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_INACTIVECAPTIONTEXT = 19 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_BTNHIGHLIGHT = 20 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_3DDKSHADOW = 21 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_3DLIGHT = 22 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_INFOTEXT = 23 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_INFOBK = 24 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_HOTLIGHT = 26 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_GRADIENTACTIVECAPTION = 27 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor STDCOLOR_GRADIENTINACTIVECAPTION = 28 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_TOOLBAR_FACE = 30 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_HIGHLIGHT = 31 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_HIGHLIGHT_BORDER = 32 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_HIGHLIGHT_PUSHED = 33 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_HIGHLIGHT_CHECKED = 36 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_HIGHLIGHT_CHECKED_BORDER = 37 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_ICONSHADDOW = 34 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_GRAYTEXT = 35 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_TOOLBAR_GRIPPER = 38 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_SEPARATOR = 39 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_DISABLED = 40 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_MENUBAR_FACE = 41 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_MENUBAR_EXPANDED = 42 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_MENUBAR_BORDER = 43 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_MENUBAR_TEXT = 44 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_HIGHLIGHT_TEXT = 45 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_TOOLBAR_TEXT = 46 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_PUSHED_TEXT = 47 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_TAB_INACTIVE_BACK = 48 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_TAB_INACTIVE_TEXT = 49 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_HIGHLIGHT_PUSHED_BORDER = 50 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_3DFACE = 51 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_3DSHADOW = 52 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_FRAME = 54 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_SPLITTER_FACE = 55 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_LABEL = 56 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPColorManagerColor XPCOLOR_STATICFRAME = 57 : Public, Static, Literal, HasDefault
+Struct XtremeSyntaxEdit.XTPCurrentSystemTheme: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeSyntaxEdit.XTPCurrentSystemTheme xtpSystemThemeUnknown = 0 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPCurrentSystemTheme xtpSystemThemeBlue = 1 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPCurrentSystemTheme xtpSystemThemeOlive = 2 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPCurrentSystemTheme xtpSystemThemeSilver = 3 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPCurrentSystemTheme xtpSystemThemeRoyale = 4 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPCurrentSystemTheme xtpSystemThemeAero = 5 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPCurrentSystemTheme xtpSystemThemeAuto = 6 : Public, Static, Literal, HasDefault
+Interface XtremeSyntaxEdit.IColorManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    XtremeSyntaxEdit.XTPCurrentSystemTheme SystemTheme 'get set' : 
+    Boolean EnableLunaBlueForRoyaleTheme 'get set' : 
+    UInt32 Color [XtremeSyntaxEdit.XTPColorManagerColor] 'get ' : 
+  Methods:
+    get_SystemTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SystemTheme(XTPCurrentSystemTheme): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EnableLunaBlueForRoyaleTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_EnableLunaBlueForRoyaleTheme(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Color(XTPColorManagerColor): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SetColor(XTPColorManagerColor, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    GetCurrentSystemTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class XtremeSyntaxEdit.ColorManagerClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+  Interfaces:
+    XtremeSyntaxEdit.IColorManager
+    XtremeSyntaxEdit.ColorManager
+  Properties:
+    XtremeSyntaxEdit.XTPCurrentSystemTheme SystemTheme 'get set' : 
+    Boolean EnableLunaBlueForRoyaleTheme 'get set' : 
+    UInt32 Color [XtremeSyntaxEdit.XTPColorManagerColor] 'get ' : 
+  Methods:
+    get_SystemTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SystemTheme(XTPCurrentSystemTheme): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EnableLunaBlueForRoyaleTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EnableLunaBlueForRoyaleTheme(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Color(XTPColorManagerColor): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SetColor(XTPColorManagerColor, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetCurrentSystemTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Interface XtremeSyntaxEdit.ColorManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeSyntaxEdit.IColorManager
+Interface XtremeSyntaxEdit.XtremePrinterInfo: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String DeviceName 'get ' : 
+    System.String DriverName 'get ' : 
+    System.String PortName 'get ' : 
+  Methods:
+    get_DeviceName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DriverName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PortName(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface XtremeSyntaxEdit.XtremePrintPreviewOptions: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String Title 'get set' : 
+  Methods:
+    get_Title(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Title(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface XtremeSyntaxEdit.PrintPageHeaderFooter: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    stdole.StdFont Font 'get set' : 
+    System.String FormatString 'get set' : 
+    System.String TextLeft 'get set' : 
+    System.String TextCenter 'get set' : 
+    System.String TextRight 'get set' : 
+  Methods:
+    get_Font(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Font(StdFont): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FormatString(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_FormatString(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TextLeft(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TextLeft(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TextCenter(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TextCenter(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TextRight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TextRight(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Clear(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface XtremeSyntaxEdit.ISyntaxEditGlobalSettings: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String ResourceFile 'get set' : 
+    System.String License 'get set' : 
+    System.String Title 'get set' : 
+    XtremeSyntaxEdit.ColorManager ColorManager 'get ' : 
+    System.String Version 'get ' : 
+    Boolean Unicode 'get ' : 
+    System.String OcxPath 'get ' : 
+  Methods:
+    get_ResourceFile(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ResourceFile(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_License(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_License(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Title(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Title(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ColorManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Version(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Unicode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_OcxPath(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Struct XtremeSyntaxEdit.XTPSyntaxEditBorderStyle: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeSyntaxEdit.XTPSyntaxEditBorderStyle xtpBorderNone = 0 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPSyntaxEditBorderStyle xtpBorderFlat = 1 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPSyntaxEditBorderStyle xtpBorderStaticEdge = 2 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPSyntaxEditBorderStyle xtpBorderClientEdge = 3 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.XTPSyntaxEditBorderStyle xtpBorderFrame = 4 : Public, Static, Literal, HasDefault
+Struct XtremeSyntaxEdit.SyntaxEditTextAction: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    XtremeSyntaxEdit.SyntaxEditTextAction editAction_InsertRow = 1 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.SyntaxEditTextAction editAction_ModifyRow = 4 : Public, Static, Literal, HasDefault
+    XtremeSyntaxEdit.SyntaxEditTextAction editAction_InsertRow_New = 16 : Public, Static, Literal, HasDefault
+Interface XtremeSyntaxEdit.SyntaxEditTextPosition: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 Row  'get set' : 
+    Int32 Col  'get set' : 
+    Int32 StrPos 'get set' : 
+  Methods:
+    get_Row(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Row(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Col(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Col(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_StrPos(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_StrPos(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SetPos(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetPosStr(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface XtremeSyntaxEdit.SyntaxEditTextSelection: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String Text 'get set' : 
+    Boolean BlockSelectionMode 'get set' : 
+    XtremeSyntaxEdit.SyntaxEditTextPosition Start 'get ' : 
+    XtremeSyntaxEdit.SyntaxEditTextPosition End 'get ' : 
+    XtremeSyntaxEdit.SyntaxEditTextPosition NormalStart 'get ' : 
+    XtremeSyntaxEdit.SyntaxEditTextPosition NormalEnd 'get ' : 
+  Methods:
+    get_Text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Text(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BlockSelectionMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_BlockSelectionMode(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Start(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_End(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NormalStart(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_NormalEnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Reset(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Interface XtremeSyntaxEdit.SyntaxEditPrintOptions: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 MarginLeft 'get set' : 
+    Int32 MarginRight 'get set' : 
+    Int32 MarginTop 'get set' : 
+    Int32 MarginBottom 'get set' : 
+    Boolean BlackWhitePrinting 'get set' : 
+    Int32 BlackWhiteContrast 'get set' : 
+    Boolean Landscape 'get set' : 
+    Boolean MarginsMeasureMetrics 'get ' : 
+    XtremeSyntaxEdit.PrintPageHeaderFooter Header 'get ' : 
+    XtremeSyntaxEdit.PrintPageHeaderFooter Footer 'get ' : 
+    XtremeSyntaxEdit.XtremePrinterInfo PrinterInfo 'get ' : 
+  Methods:
+    get_MarginLeft(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MarginLeft(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MarginRight(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MarginRight(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MarginTop(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MarginTop(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MarginBottom(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_MarginBottom(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BlackWhitePrinting(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_BlackWhitePrinting(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BlackWhiteContrast(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_BlackWhiteContrast(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Landscape(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Landscape(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_MarginsMeasureMetrics(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Header(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Footer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PrinterInfo(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface XtremeSyntaxEdit.SyntaxEditDataManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    System.String FileExt 'get set' : 
+  Methods:
+    get_FileExt(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_FileExt(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface XtremeSyntaxEdit.SyntaxEditPaintManager: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    UInt32 TextColor 'get set' : 
+    UInt32 BackColor 'get set' : 
+    UInt32 ReadOnlyBackColor 'get set' : 
+    UInt32 LineNumberTextColor 'get set' : 
+    UInt32 LineNumberBackColor 'get set' : 
+    UInt32 SelectedTextColor 'get set' : 
+    UInt32 SelectedBackColor 'get set' : 
+  Methods:
+    get_TextColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TextColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BackColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_BackColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ReadOnlyBackColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ReadOnlyBackColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LineNumberTextColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_LineNumberTextColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LineNumberBackColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_LineNumberBackColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedTextColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SelectedTextColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_SelectedBackColor(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SelectedBackColor(UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface XtremeSyntaxEdit._DSyntaxEdit: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Properties:
+    Int32 hWnd 'get set' : 
+    Boolean Enabled 'get set' : 
+    stdole.StdFont Font 'get set' : 
+    System.String Text 'get set' : 
+    XtremeSyntaxEdit.XTPSyntaxEditBorderStyle BorderStyle 'get set' : 
+    System.String ConfigFile 'get set' : 
+    Int32 TopRow 'get set' : 
+    Boolean EnableSyntaxColorization 'get set' : 
+    Boolean ShowLineNumbers 'get set' : 
+    Boolean ShowSelectionMargin 'get set' : 
+    Boolean ShowScrollBarVert 'get set' : 
+    Boolean ShowScrollBarHorz 'get set' : 
+    Boolean EnableVirtualSpace 'get set' : 
+    Boolean EnableAutoIndent 'get set' : 
+    Boolean ShowWhiteSpace 'get set' : 
+    Boolean ReadOnly 'get set' : 
+    Boolean ShowCollapsibleNodes 'get set' : 
+    Int32 AutoCompleteWndWidth 'get set' : 
+    Boolean EnableEditAccelerators 'get set' : 
+    Boolean HideCaret 'get set' : 
+    Boolean OverwriteMode 'get set' : 
+    Boolean FileMonitorMode 'get set' : 
+    Boolean TabWithSpace 'get set' : 
+    Int32 TabSize 'get set' : 
+    Boolean ViewOnly 'get set' : 
+    Boolean AllowExpandCollapseInViewOnly 'get set' : 
+    System.String CustomTitle 'get set' : 
+    Boolean ActivateOnFocus 'get set' : 
+    XtremeSyntaxEdit.SyntaxEditDataManager DataManager 'get ' : 
+    XtremeSyntaxEdit.SyntaxEditGlobalSettings GlobalSettings 'get ' : 
+    Int32 CurrRow 'get ' : 
+    Int32 CurrCol 'get ' : 
+    Int32 CurrRowPos 'get ' : 
+    XtremeSyntaxEdit.SyntaxEditTextPosition CurrPos 'get ' : 
+    XtremeSyntaxEdit.SyntaxEditTextSelection Selection 'get ' : 
+    Int32 FindReplaceDialogVisible 'get ' : 
+    XtremeSyntaxEdit.SyntaxEditPrintOptions PrintOptions 'get ' : 
+    XtremeSyntaxEdit.XtremePrintPreviewOptions PrintPreviewOptions 'get ' : 
+    XtremeSyntaxEdit.SyntaxEditPaintManager PaintManager 'get ' : 
+    Boolean CanCut 'get ' : 
+    Boolean CanCopy 'get ' : 
+    Boolean CanPaste 'get ' : 
+    Boolean CanUndo 'get ' : 
+    Boolean CanRedo 'get ' : 
+    Int32 RowsCount 'get ' : 
+    Int32 RowTextLength [Int32] 'get ' : 
+    Int32 TextLength 'get ' : 
+    System.String RowText [Int32] 'get set' : 
+    System.String SyntaxScheme 'get set' : 
+    System.String ColorScheme 'get set' : 
+    System.String LineNumbersFormat 'get set' : 
+  Methods:
+    get_RowTextLength(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TextLength(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_RowText(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_RowText(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    InsertRow(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RemoveRow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SelectAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ClearUndoBuffer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    IndentSelection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    UnindentSelection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_SyntaxScheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_SyntaxScheme(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ColorScheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ColorScheme(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_LineNumbersFormat(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_LineNumbersFormat(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    PrintPreviewExt(Boolean, Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RowColCodeFromPoint(Int32, Int32, Int32&, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    NextBookmark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RefreshColors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    RedrawControl(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetSyntaxAndColorScheme(String(In, HasFieldMarshal), String(In, Optional, HasFieldMarshal), Boolean(In, Optional), Boolean(In, Optional)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_CurrRow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CurrCol(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CurrRowPos(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CurrPos(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Selection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SetRowBkColor(Int32, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SetRowColor(Int32, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    ShowFindReplaceDialog(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    HideFindReplaceDialog(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_FindReplaceDialogVisible(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PrintOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_PrintPreviewOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    PrintText(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PrintText2(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PrintPreview(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_PaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    SyntaxSet(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_CanCut(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CanCopy(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CanPaste(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CanUndo(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CanRedo(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    Cut(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Copy(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Paste(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Undo(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    Redo(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_RowsCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowCollapsibleNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowCollapsibleNodes(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AutoCompleteWndWidth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AutoCompleteWndWidth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EnableEditAccelerators(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_EnableEditAccelerators(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_HideCaret(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_HideCaret(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_OverwriteMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_OverwriteMode(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_FileMonitorMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_FileMonitorMode(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabWithSpace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabWithSpace(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TabSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TabSize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ViewOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ViewOnly(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_AllowExpandCollapseInViewOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_AllowExpandCollapseInViewOnly(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_CustomTitle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_CustomTitle(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ActivateOnFocus(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ActivateOnFocus(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_DataManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_GlobalSettings(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    OpenFile(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SaveFile(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    SaveFileAs(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddRemoveBookmark(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    AddRemoveBreakPoint(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    PrevBookmark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    get_hWnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_hWnd(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Enabled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Enabled(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Font(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Font(StdFont): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_Text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_Text(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_BorderStyle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_BorderStyle(XTPSyntaxEditBorderStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ConfigFile(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ConfigFile(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_TopRow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_TopRow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EnableSyntaxColorization(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_EnableSyntaxColorization(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowLineNumbers(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowLineNumbers(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowSelectionMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowSelectionMargin(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowScrollBarVert(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowScrollBarVert(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowScrollBarHorz(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowScrollBarHorz(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EnableVirtualSpace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_EnableVirtualSpace(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_EnableAutoIndent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_EnableAutoIndent(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ShowWhiteSpace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ShowWhiteSpace(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    get_ReadOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+    set_ReadOnly(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract, SpecialName
+Interface XtremeSyntaxEdit._DSyntaxEditEvents: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Methods:
+    DblClick(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MouseDown(Int16, Int16, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MouseMove(Int16, Int16, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    MouseUp(Int16, Int16, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    KeyDown(Int16&, Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    KeyUp(Int16&, Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    CurPosChanged(Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    TextChanged(Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class XtremeSyntaxEdit.SyntaxEditClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    XtremeSyntaxEdit._DSyntaxEdit
+    XtremeSyntaxEdit.SyntaxEdit
+    XtremeSyntaxEdit._DSyntaxEditEvents_Event
+  Properties:
+    Int32 hWnd 'get set' : 
+    Boolean Enabled 'get set' : 
+    stdole.StdFont Font 'get set' : 
+    System.String Text 'get set' : 
+    XtremeSyntaxEdit.XTPSyntaxEditBorderStyle BorderStyle 'get set' : 
+    System.String ConfigFile 'get set' : 
+    Int32 TopRow 'get set' : 
+    Boolean EnableSyntaxColorization 'get set' : 
+    Boolean ShowLineNumbers 'get set' : 
+    Boolean ShowSelectionMargin 'get set' : 
+    Boolean ShowScrollBarVert 'get set' : 
+    Boolean ShowScrollBarHorz 'get set' : 
+    Boolean EnableVirtualSpace 'get set' : 
+    Boolean EnableAutoIndent 'get set' : 
+    Boolean ShowWhiteSpace 'get set' : 
+    Boolean ReadOnly 'get set' : 
+    Boolean ShowCollapsibleNodes 'get set' : 
+    Int32 AutoCompleteWndWidth 'get set' : 
+    Boolean EnableEditAccelerators 'get set' : 
+    Boolean HideCaret 'get set' : 
+    Boolean OverwriteMode 'get set' : 
+    Boolean FileMonitorMode 'get set' : 
+    Boolean TabWithSpace 'get set' : 
+    Int32 TabSize 'get set' : 
+    Boolean ViewOnly 'get set' : 
+    Boolean AllowExpandCollapseInViewOnly 'get set' : 
+    System.String CustomTitle 'get set' : 
+    Boolean ActivateOnFocus 'get set' : 
+    XtremeSyntaxEdit.SyntaxEditDataManager DataManager 'get ' : 
+    XtremeSyntaxEdit.SyntaxEditGlobalSettings GlobalSettings 'get ' : 
+    Int32 CurrRow 'get ' : 
+    Int32 CurrCol 'get ' : 
+    Int32 CurrRowPos 'get ' : 
+    XtremeSyntaxEdit.SyntaxEditTextPosition CurrPos 'get ' : 
+    XtremeSyntaxEdit.SyntaxEditTextSelection Selection 'get ' : 
+    Int32 FindReplaceDialogVisible 'get ' : 
+    XtremeSyntaxEdit.SyntaxEditPrintOptions PrintOptions 'get ' : 
+    XtremeSyntaxEdit.XtremePrintPreviewOptions PrintPreviewOptions 'get ' : 
+    XtremeSyntaxEdit.SyntaxEditPaintManager PaintManager 'get ' : 
+    Boolean CanCut 'get ' : 
+    Boolean CanCopy 'get ' : 
+    Boolean CanPaste 'get ' : 
+    Boolean CanUndo 'get ' : 
+    Boolean CanRedo 'get ' : 
+    Int32 RowsCount 'get ' : 
+    Int32 RowTextLength [Int32] 'get ' : 
+    Int32 TextLength 'get ' : 
+    System.String RowText [Int32] 'get set' : 
+    System.String SyntaxScheme 'get set' : 
+    System.String ColorScheme 'get set' : 
+    System.String LineNumbersFormat 'get set' : 
+  Events:
+    XtremeSyntaxEdit._DSyntaxEditEvents_DblClickEventHandler DblClick: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_MouseDownEventHandler MouseDown: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_MouseMoveEventHandler MouseMove: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_MouseUpEventHandler MouseUp: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_KeyDownEventHandler KeyDown: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_KeyUpEventHandler KeyUp: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_CurPosChangedEventHandler CurPosChanged: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_TextChangedEventHandler TextChanged: 
+  Methods:
+    add_KeyUp(_DSyntaxEditEvents_KeyUpEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_KeyUp(_DSyntaxEditEvents_KeyUpEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_CurPosChanged(_DSyntaxEditEvents_CurPosChangedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_CurPosChanged(_DSyntaxEditEvents_CurPosChangedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_TextChanged(_DSyntaxEditEvents_TextChangedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_TextChanged(_DSyntaxEditEvents_TextChangedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    InsertRow(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RemoveRow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SelectAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ClearUndoBuffer(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    IndentSelection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    UnindentSelection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_SyntaxScheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_SyntaxScheme(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ColorScheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ColorScheme(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_LineNumbersFormat(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_LineNumbersFormat(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    PrintPreviewExt(Boolean, Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RowColCodeFromPoint(Int32, Int32, Int32&, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_DblClick(_DSyntaxEditEvents_DblClickEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_DblClick(_DSyntaxEditEvents_DblClickEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_MouseDown(_DSyntaxEditEvents_MouseDownEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_MouseDown(_DSyntaxEditEvents_MouseDownEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_MouseMove(_DSyntaxEditEvents_MouseMoveEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_MouseMove(_DSyntaxEditEvents_MouseMoveEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_MouseUp(_DSyntaxEditEvents_MouseUpEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_MouseUp(_DSyntaxEditEvents_MouseUpEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    add_KeyDown(_DSyntaxEditEvents_KeyDownEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    remove_KeyDown(_DSyntaxEditEvents_KeyDownEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ShowFindReplaceDialog(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    HideFindReplaceDialog(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_FindReplaceDialogVisible(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PrintOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PrintPreviewOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    PrintText(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PrintText2(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PrintPreview(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_PaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SyntaxSet(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_CanCut(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CanCopy(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CanPaste(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CanUndo(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CanRedo(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    Cut(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Copy(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Paste(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Undo(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Redo(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_RowsCount(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RowTextLength(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TextLength(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RowText(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_RowText(Int32, String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AllowExpandCollapseInViewOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AllowExpandCollapseInViewOnly(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CustomTitle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CustomTitle(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActivateOnFocus(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ActivateOnFocus(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DataManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_GlobalSettings(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    OpenFile(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveFile(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveFileAs(String(HasFieldMarshal)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddRemoveBookmark(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddRemoveBreakPoint(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PrevBookmark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    NextBookmark(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RefreshColors(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RedrawControl(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetSyntaxAndColorScheme(String(In, HasFieldMarshal), String(In, Optional, HasFieldMarshal), Boolean(In, Optional), Boolean(In, Optional)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_CurrRow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CurrCol(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CurrRowPos(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CurrPos(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Selection(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    SetRowBkColor(Int32, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetRowColor(Int32, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    set_EnableVirtualSpace(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EnableAutoIndent(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EnableAutoIndent(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowWhiteSpace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowWhiteSpace(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ReadOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ReadOnly(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowCollapsibleNodes(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowCollapsibleNodes(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_AutoCompleteWndWidth(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_AutoCompleteWndWidth(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EnableEditAccelerators(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EnableEditAccelerators(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_HideCaret(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_HideCaret(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OverwriteMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_OverwriteMode(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_FileMonitorMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_FileMonitorMode(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabWithSpace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabWithSpace(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabSize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TabSize(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ViewOnly(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ViewOnly(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_hWnd(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_hWnd(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Enabled(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Enabled(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Font(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Font(StdFont): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Text(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Text(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_BorderStyle(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_BorderStyle(XTPSyntaxEditBorderStyle): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ConfigFile(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ConfigFile(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TopRow(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_TopRow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EnableSyntaxColorization(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_EnableSyntaxColorization(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowLineNumbers(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowLineNumbers(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowSelectionMargin(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowSelectionMargin(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowScrollBarVert(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowScrollBarVert(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ShowScrollBarHorz(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ShowScrollBarHorz(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_EnableVirtualSpace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface XtremeSyntaxEdit._DSyntaxEditEvents_Event: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract
+  Events:
+    XtremeSyntaxEdit._DSyntaxEditEvents_DblClickEventHandler DblClick: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_MouseDownEventHandler MouseDown: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_MouseMoveEventHandler MouseMove: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_MouseUpEventHandler MouseUp: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_KeyDownEventHandler KeyDown: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_KeyUpEventHandler KeyUp: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_CurPosChangedEventHandler CurPosChanged: 
+    XtremeSyntaxEdit._DSyntaxEditEvents_TextChangedEventHandler TextChanged: 
+  Methods:
+    add_DblClick(_DSyntaxEditEvents_DblClickEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_DblClick(_DSyntaxEditEvents_DblClickEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_MouseDown(_DSyntaxEditEvents_MouseDownEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_MouseDown(_DSyntaxEditEvents_MouseDownEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_MouseMove(_DSyntaxEditEvents_MouseMoveEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_MouseMove(_DSyntaxEditEvents_MouseMoveEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_MouseUp(_DSyntaxEditEvents_MouseUpEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_MouseUp(_DSyntaxEditEvents_MouseUpEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_KeyDown(_DSyntaxEditEvents_KeyDownEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_KeyDown(_DSyntaxEditEvents_KeyDownEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_KeyUp(_DSyntaxEditEvents_KeyUpEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_KeyUp(_DSyntaxEditEvents_KeyUpEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_CurPosChanged(_DSyntaxEditEvents_CurPosChangedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_CurPosChanged(_DSyntaxEditEvents_CurPosChangedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    add_TextChanged(_DSyntaxEditEvents_TextChangedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+    remove_TextChanged(_DSyntaxEditEvents_TextChangedEventHandler): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, Abstract
+Class XtremeSyntaxEdit._DSyntaxEditEvents_DblClickEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(): PrivateScope, Public, Virtual
+Class XtremeSyntaxEdit._DSyntaxEditEvents_MouseDownEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int16, Int16, Int32, Int32): PrivateScope, Public, Virtual
+Class XtremeSyntaxEdit._DSyntaxEditEvents_MouseMoveEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int16, Int16, Int32, Int32): PrivateScope, Public, Virtual
+Class XtremeSyntaxEdit._DSyntaxEditEvents_MouseUpEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int16, Int16, Int32, Int32): PrivateScope, Public, Virtual
+Class XtremeSyntaxEdit._DSyntaxEditEvents_KeyDownEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int16&, Int16): PrivateScope, Public, Virtual
+Class XtremeSyntaxEdit._DSyntaxEditEvents_KeyUpEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int16&, Int16): PrivateScope, Public, Virtual
+Class XtremeSyntaxEdit._DSyntaxEditEvents_CurPosChangedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32): PrivateScope, Public, Virtual
+Class XtremeSyntaxEdit._DSyntaxEditEvents_TextChangedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, UIntPtr): PrivateScope, Public, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Int32, Int32, Int32): PrivateScope, Public, Virtual
+Interface XtremeSyntaxEdit.SyntaxEdit: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeSyntaxEdit._DSyntaxEdit
+    XtremeSyntaxEdit._DSyntaxEditEvents_Event
+Class XtremeSyntaxEdit.SyntaxEditGlobalSettingsClass: AutoLayout, AnsiClass, Class, Public, Import
+  :System.__ComObject
+    Void .ctor(): PrivateScope, Public, SpecialName, RTSpecialName
+  Interfaces:
+    XtremeSyntaxEdit.ISyntaxEditGlobalSettings
+    XtremeSyntaxEdit.SyntaxEditGlobalSettings
+  Properties:
+    System.String ResourceFile 'get set' : 
+    System.String License 'get set' : 
+    System.String Title 'get set' : 
+    XtremeSyntaxEdit.ColorManager ColorManager 'get ' : 
+    System.String Version 'get ' : 
+    Boolean Unicode 'get ' : 
+    System.String OcxPath 'get ' : 
+  Methods:
+    get_ResourceFile(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ResourceFile(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_License(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_License(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Title(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Title(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ColorManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Version(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Unicode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_OcxPath(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+Interface XtremeSyntaxEdit.SyntaxEditGlobalSettings: AutoLayout, AnsiClass, Class, Public, ClassSemanticsMask, Abstract, Import
+  Interfaces:
+    XtremeSyntaxEdit.ISyntaxEditGlobalSettings
+Class XtremeSyntaxEdit._DSyntaxEditEvents_SinkHelper: AutoLayout, AnsiClass, Class, Public, Sealed
+  Interfaces:
+    XtremeSyntaxEdit._DSyntaxEditEvents
+  Fields:
+    XtremeSyntaxEdit._DSyntaxEditEvents_DblClickEventHandler m_DblClickDelegate : Public
+    XtremeSyntaxEdit._DSyntaxEditEvents_MouseDownEventHandler m_MouseDownDelegate : Public
+    XtremeSyntaxEdit._DSyntaxEditEvents_MouseMoveEventHandler m_MouseMoveDelegate : Public
+    XtremeSyntaxEdit._DSyntaxEditEvents_MouseUpEventHandler m_MouseUpDelegate : Public
+    XtremeSyntaxEdit._DSyntaxEditEvents_KeyDownEventHandler m_KeyDownDelegate : Public
+    XtremeSyntaxEdit._DSyntaxEditEvents_KeyUpEventHandler m_KeyUpDelegate : Public
+    XtremeSyntaxEdit._DSyntaxEditEvents_CurPosChangedEventHandler m_CurPosChangedDelegate : Public
+    XtremeSyntaxEdit._DSyntaxEditEvents_TextChangedEventHandler m_TextChangedDelegate : Public
+    Int32 m_dwCookie : Public
+  Methods:
+    DblClick(): PrivateScope, Public, Virtual
+    MouseDown(Int16, Int16, Int32, Int32): PrivateScope, Public, Virtual
+    MouseMove(Int16, Int16, Int32, Int32): PrivateScope, Public, Virtual
+    MouseUp(Int16, Int16, Int32, Int32): PrivateScope, Public, Virtual
+    KeyDown(Int16&, Int16): PrivateScope, Public, Virtual
+    KeyUp(Int16&, Int16): PrivateScope, Public, Virtual
+    CurPosChanged(Int32, Int32): PrivateScope, Public, Virtual
+    TextChanged(Int32, Int32, Int32): PrivateScope, Public, Virtual

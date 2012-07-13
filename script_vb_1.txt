@@ -1,0 +1,25 @@
+Public Class Script
+	Implements scriptInterface.IScript
+	
+	Dim Cubesense As scriptInterface.IHost
+	
+	Public Sub Initialize(Host As scriptInterface.IHost) Implements scriptInterface.IScript.Initialize
+		Cubesense = Host
+		Main()
+	End Sub
+	
+	Public Sub Main() Implements scriptInterface.IScript.Main
+		dim x as long
+		dim y as long
+		dim z as long
+		for x=0 to 7
+			for y=0 to 7
+				for z=0 to 7
+					Cubesense.drawVoxel(0,x,y,z,255,255,255)
+				next
+			next
+		next
+		
+	End Sub	
+
+End Class

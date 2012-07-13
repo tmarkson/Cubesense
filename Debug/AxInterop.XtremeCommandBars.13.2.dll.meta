@@ -1,0 +1,947 @@
+Assembly AxInterop.XtremeCommandBars.13.2, Version=13.2.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Assembly Interop.XtremeCommandBars.13.2, Version=13.2.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=None
+Assembly System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a: 
+	hash=SHA1, flags=None
+Assembly System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=SHA1, flags=None
+Class AxXtremeCommandBars.AxCommandBars: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.AxHost
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    XtremeCommandBars.XTPVisualTheme VisualTheme 'get set' : 
+    XtremeCommandBars.ImageManagerIcons Icons 'get set' : 
+    XtremeCommandBars.XTPScaleMode ScaleMode 'get set' : 
+    Boolean CtlRightToLeft 'get set' : 
+    Int32 Count 'get ' : 
+    XtremeCommandBars.CommandBar Item [Int32] 'get ' : 
+    XtremeCommandBars.MenuBar ActiveMenuBar 'get ' : 
+    XtremeCommandBars.KeyBindings KeyBindings 'get ' : 
+    XtremeCommandBars.CommandBarsOptions Options 'get ' : 
+    XtremeCommandBars.TabWorkspace TabWorkspace 'get ' : 
+    XtremeCommandBars.StatusBar StatusBar 'get ' : 
+    XtremeCommandBars.MessageBar MessageBar 'get ' : 
+    XtremeCommandBars.CommandBarControls DesignerControls 'get ' : 
+    XtremeCommandBars.CommandBarsGlobalSettings GlobalSettings 'get ' : 
+    XtremeCommandBars.CommandBarControl CustomizedControl 'get ' : 
+    XtremeCommandBars.ToolTipContext ToolTipContext 'get ' : 
+    Boolean TrackingMode 'get ' : 
+    XtremeCommandBars.CommandBar FocusedCommandBar 'get ' : 
+    XtremeCommandBars.CommandBarActions Actions 'get ' : 
+    XtremeCommandBars.PaintManager PaintManager 'get ' : 
+    XtremeCommandBars.CommandBarsContextMenus ContextMenus 'get ' : 
+    XtremeCommandBars.RecentFileList RecentFileList 'get ' : 
+  Events:
+    AxXtremeCommandBars._DCommandBarsEvents_ExecuteEventHandler Execute: 
+    AxXtremeCommandBars._DCommandBarsEvents_UpdateEventHandler UpdateEvent: 
+    System.EventHandler ResizeEvent: 
+    AxXtremeCommandBars._DCommandBarsEvents_GetClientBordersWidthEventHandler GetClientBordersWidth: 
+    AxXtremeCommandBars._DCommandBarsEvents_ControlSelectedEventHandler ControlSelected: 
+    AxXtremeCommandBars._DCommandBarsEvents_InitCommandsPopupEventHandler InitCommandsPopup: 
+    AxXtremeCommandBars._DCommandBarsEvents_ResizeClientEventHandler ResizeClient: 
+    System.EventHandler SpecialColorChanged: 
+    AxXtremeCommandBars._DCommandBarsEvents_RepositionAlignedControlsEventHandler RepositionAlignedControls: 
+    AxXtremeCommandBars._DCommandBarsEvents_CustomizationEventHandler Customization: 
+    AxXtremeCommandBars._DCommandBarsEvents_ToolBarVisibleChangedEventHandler ToolBarVisibleChanged: 
+    AxXtremeCommandBars._DCommandBarsEvents_ControlRButtonUpEventHandler ControlRButtonUp: 
+    System.EventHandler CustomizationDone: 
+    AxXtremeCommandBars._DCommandBarsEvents_CommandBarKeyDownEventHandler CommandBarKeyDown: 
+    AxXtremeCommandBars._DCommandBarsEvents_ToolBarContextMenuEventHandler ToolBarContextMenu: 
+    AxXtremeCommandBars._DCommandBarsEvents_TrackingModeChangedEventHandler TrackingModeChanged: 
+    AxXtremeCommandBars._DCommandBarsEvents_CustomizationResetToolBarEventHandler CustomizationResetToolBar: 
+    AxXtremeCommandBars._DCommandBarsEvents_CustomizationAddToolBarEventHandler CustomizationAddToolBar: 
+    AxXtremeCommandBars._DCommandBarsEvents_CustomizationDeleteToolBarEventHandler CustomizationDeleteToolBar: 
+    AxXtremeCommandBars._DCommandBarsEvents_ControlNotifyEventHandler ControlNotify: 
+    AxXtremeCommandBars._DCommandBarsEvents_GetActiveDocumentIDEventHandler GetActiveDocumentID: 
+    AxXtremeCommandBars._DCommandBarsEvents_OLEStartDragEventHandler OLEStartDrag: 
+    AxXtremeCommandBars._DCommandBarsEvents_OLECompleteDragEventHandler OLECompleteDrag: 
+  Methods:
+    GetClientRect(Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RecalcLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddIconHandle(Int32, Int32, Int32, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveCommandBars(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveCommandBars(Object, Object, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadCommandBars(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadCommandBars(Object, Object, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadDesignerBars(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadDesignerBars(Object, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindControl(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindControl(Object, Object, Object, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DockToolBar(CommandBar, Int32, Int32, XTPBarPosition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSpecialColor(XTPColorManagerColor): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ShowTabWorkspace(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MoveAlignedControl(Object, Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadStateFromString(String, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadStateFromString(String, Boolean, Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveStateToString(Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveStateToString(Boolean, Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_VisualTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_VisualTheme(XTPVisualTheme): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Icons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Icons(ImageManagerIcons): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ScaleMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ScaleMode(XTPScaleMode): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CtlRightToLeft(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CtlRightToLeft(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActiveMenuBar(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_KeyBindings(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Options(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabWorkspace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_StatusBar(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MessageBar(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DesignerControls(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_GlobalSettings(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CustomizedControl(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ToolTipContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TrackingMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_FocusedCommandBar(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Actions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ContextMenus(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RecentFileList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    add_Execute(_DCommandBarsEvents_ExecuteEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Execute(_DCommandBarsEvents_ExecuteEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_UpdateEvent(_DCommandBarsEvents_UpdateEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_UpdateEvent(_DCommandBarsEvents_UpdateEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ResizeEvent(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ResizeEvent(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_GetClientBordersWidth(_DCommandBarsEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_GetClientBordersWidth(_DCommandBarsEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ControlSelected(_DCommandBarsEvents_ControlSelectedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ControlSelected(_DCommandBarsEvents_ControlSelectedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_InitCommandsPopup(_DCommandBarsEvents_InitCommandsPopupEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_InitCommandsPopup(_DCommandBarsEvents_InitCommandsPopupEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ResizeClient(_DCommandBarsEvents_ResizeClientEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ResizeClient(_DCommandBarsEvents_ResizeClientEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_SpecialColorChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SpecialColorChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RepositionAlignedControls(_DCommandBarsEvents_RepositionAlignedControlsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RepositionAlignedControls(_DCommandBarsEvents_RepositionAlignedControlsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Customization(_DCommandBarsEvents_CustomizationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Customization(_DCommandBarsEvents_CustomizationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ToolBarVisibleChanged(_DCommandBarsEvents_ToolBarVisibleChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ToolBarVisibleChanged(_DCommandBarsEvents_ToolBarVisibleChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ControlRButtonUp(_DCommandBarsEvents_ControlRButtonUpEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ControlRButtonUp(_DCommandBarsEvents_ControlRButtonUpEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CustomizationDone(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CustomizationDone(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CommandBarKeyDown(_DCommandBarsEvents_CommandBarKeyDownEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CommandBarKeyDown(_DCommandBarsEvents_CommandBarKeyDownEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ToolBarContextMenu(_DCommandBarsEvents_ToolBarContextMenuEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ToolBarContextMenu(_DCommandBarsEvents_ToolBarContextMenuEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_TrackingModeChanged(_DCommandBarsEvents_TrackingModeChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_TrackingModeChanged(_DCommandBarsEvents_TrackingModeChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CustomizationResetToolBar(_DCommandBarsEvents_CustomizationResetToolBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CustomizationResetToolBar(_DCommandBarsEvents_CustomizationResetToolBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CustomizationAddToolBar(_DCommandBarsEvents_CustomizationAddToolBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CustomizationAddToolBar(_DCommandBarsEvents_CustomizationAddToolBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CustomizationDeleteToolBar(_DCommandBarsEvents_CustomizationDeleteToolBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CustomizationDeleteToolBar(_DCommandBarsEvents_CustomizationDeleteToolBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ControlNotify(_DCommandBarsEvents_ControlNotifyEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ControlNotify(_DCommandBarsEvents_ControlNotifyEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_GetActiveDocumentID(_DCommandBarsEvents_GetActiveDocumentIDEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_GetActiveDocumentID(_DCommandBarsEvents_GetActiveDocumentIDEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OLEStartDrag(_DCommandBarsEvents_OLEStartDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OLEStartDrag(_DCommandBarsEvents_OLEStartDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OLECompleteDrag(_DCommandBarsEvents_OLECompleteDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OLECompleteDrag(_DCommandBarsEvents_OLECompleteDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    OLEDrag(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddMiniToolBar(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableCustomization(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetDispatch(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetMDIClient(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ClosePopups(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetSpecialColor(XTPColorManagerColor, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddDialogBar(String, XTPBarPosition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadStateFromXMLString(String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadStateFromXMLString(String, String, StateOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveStateToXMLString(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveStateToXMLString(String, StateOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateStateOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DoPropExchange(PropExchange): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DoPropExchange(PropExchange, StateOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DeleteAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddMenuBar(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddTabToolBar(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddRibbonBar(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachToWindow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ShowCustomizeDialog(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableOffice2007Frame(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableActions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateGalleryItems(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableOffice2007FrameHandle(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateCommandBarControl(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateCommandBar(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ContextHelp(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Add(String, XTPBarPosition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddImageList(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_ExecuteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_ExecuteEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_ExecuteEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_ExecuteEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBarControl): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBarControl control : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_UpdateEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_UpdateEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_UpdateEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_UpdateEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBarControl): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBarControl control : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_GetClientBordersWidthEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_GetClientBordersWidthEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_GetClientBordersWidthEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_GetClientBordersWidthEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 left : Public
+    Int32 top : Public
+    Int32 right : Public
+    Int32 bottom : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_ControlSelectedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_ControlSelectedEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_ControlSelectedEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_ControlSelectedEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBarControl): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBarControl control : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_InitCommandsPopupEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_InitCommandsPopupEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_InitCommandsPopupEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_InitCommandsPopupEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar commandBar : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_ResizeClientEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_ResizeClientEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_ResizeClientEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_ResizeClientEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 left : Public
+    Int32 top : Public
+    Int32 right : Public
+    Int32 bottom : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_RepositionAlignedControlsEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_RepositionAlignedControlsEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_RepositionAlignedControlsEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_RepositionAlignedControlsEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 left : Public
+    Int32 top : Public
+    Int32 right : Public
+    Int32 bottom : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_CustomizationEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_CustomizationEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_CustomizationEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_CustomizationEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CustomizeOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CustomizeOptions options : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_ToolBarVisibleChangedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_ToolBarVisibleChangedEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_ToolBarVisibleChangedEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_ToolBarVisibleChangedEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar toolBar : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_ControlRButtonUpEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_ControlRButtonUpEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_ControlRButtonUpEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_ControlRButtonUpEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBarControl): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBarControl control : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_CommandBarKeyDownEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_CommandBarKeyDownEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_CommandBarKeyDownEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_CommandBarKeyDownEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar, Int32, Int16): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar commandBar : Public
+    Int32 keyCode : Public
+    Int16 shift : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_ToolBarContextMenuEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_ToolBarContextMenuEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_ToolBarContextMenuEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_ToolBarContextMenuEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar, XtremeCommandBars.CommandBar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar toolBar : Public
+    XtremeCommandBars.CommandBar contextMenu : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_TrackingModeChangedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_TrackingModeChangedEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_TrackingModeChangedEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_TrackingModeChangedEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar commandBar : Public
+    Boolean mode : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_CustomizationResetToolBarEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_CustomizationResetToolBarEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_CustomizationResetToolBarEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_CustomizationResetToolBarEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar toolBar : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_CustomizationAddToolBarEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_CustomizationAddToolBarEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_CustomizationAddToolBarEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_CustomizationAddToolBarEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar toolBar : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_CustomizationDeleteToolBarEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_CustomizationDeleteToolBarEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_CustomizationDeleteToolBarEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_CustomizationDeleteToolBarEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar toolBar : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_ControlNotifyEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_ControlNotifyEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_ControlNotifyEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_ControlNotifyEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBarControl, Int32, System.Object, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBarControl control : Public
+    Int32 code : Public
+    System.Object notifyData : Public
+    System.Object handled : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_GetActiveDocumentIDEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_GetActiveDocumentIDEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_GetActiveDocumentIDEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_GetActiveDocumentIDEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_OLEStartDragEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_OLEStartDragEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_OLEStartDragEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_OLEStartDragEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.DataObject, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.DataObject data : Public
+    Int32 allowedEffects : Public
+Class AxXtremeCommandBars._DCommandBarsEvents_OLECompleteDragEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsEvents_OLECompleteDragEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsEvents_OLECompleteDragEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsEvents_OLECompleteDragEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 effect : Public
+Class AxXtremeCommandBars.AxCommandBarsEventMulticaster: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(AxXtremeCommandBars.AxCommandBars): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    XtremeCommandBars._DCommandBarsEvents
+  Methods:
+    Execute(CommandBarControl): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Update(CommandBarControl): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Resize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetClientBordersWidth(Int32&, Int32&, Int32&, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ControlSelected(CommandBarControl): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    InitCommandsPopup(CommandBar): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ResizeClient(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SpecialColorChanged(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RepositionAlignedControls(Int32&, Int32&, Int32&, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Customization(CustomizeOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ToolBarVisibleChanged(CommandBar): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ControlRButtonUp(CommandBarControl): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CustomizationDone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CommandBarKeyDown(CommandBar, Int32&, Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ToolBarContextMenu(CommandBar, CommandBar): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TrackingModeChanged(CommandBar, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CustomizationResetToolBar(CommandBar): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CustomizationAddToolBar(CommandBar): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CustomizationDeleteToolBar(CommandBar): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ControlNotify(CommandBarControl, Int32, Object, Object&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetActiveDocumentID(Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OLEStartDrag(DataObject&, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OLECompleteDrag(Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars.AxCommandBarsFrame: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.AxHost
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.Collections.IEnumerable
+  Properties:
+    XtremeCommandBars.XTPVisualTheme VisualTheme 'get set' : 
+    XtremeCommandBars.ImageManagerIcons Icons 'get set' : 
+    XtremeCommandBars.XTPScaleMode ScaleMode 'get set' : 
+    Boolean CtlRightToLeft 'get set' : 
+    Int32 Count 'get ' : 
+    XtremeCommandBars.CommandBar Item [Int32] 'get ' : 
+    XtremeCommandBars.MenuBar ActiveMenuBar 'get ' : 
+    XtremeCommandBars.KeyBindings KeyBindings 'get ' : 
+    XtremeCommandBars.CommandBarsOptions Options 'get ' : 
+    XtremeCommandBars.TabWorkspace TabWorkspace 'get ' : 
+    XtremeCommandBars.StatusBar StatusBar 'get ' : 
+    XtremeCommandBars.MessageBar MessageBar 'get ' : 
+    XtremeCommandBars.CommandBarControls DesignerControls 'get ' : 
+    XtremeCommandBars.CommandBarsGlobalSettings GlobalSettings 'get ' : 
+    XtremeCommandBars.CommandBarControl CustomizedControl 'get ' : 
+    XtremeCommandBars.ToolTipContext ToolTipContext 'get ' : 
+    Boolean TrackingMode 'get ' : 
+    XtremeCommandBars.CommandBar FocusedCommandBar 'get ' : 
+    XtremeCommandBars.CommandBarActions Actions 'get ' : 
+    XtremeCommandBars.PaintManager PaintManager 'get ' : 
+    XtremeCommandBars.CommandBarsContextMenus ContextMenus 'get ' : 
+    XtremeCommandBars.RecentFileList RecentFileList 'get ' : 
+  Events:
+    AxXtremeCommandBars._DCommandBarsFrameEvents_ExecuteEventHandler Execute: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_UpdateEventHandler UpdateEvent: 
+    System.EventHandler ResizeEvent: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_GetClientBordersWidthEventHandler GetClientBordersWidth: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_ControlSelectedEventHandler ControlSelected: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_InitCommandsPopupEventHandler InitCommandsPopup: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_ResizeClientEventHandler ResizeClient: 
+    System.EventHandler SpecialColorChanged: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_RepositionAlignedControlsEventHandler RepositionAlignedControls: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_CustomizationEventHandler Customization: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_ToolBarVisibleChangedEventHandler ToolBarVisibleChanged: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_ControlRButtonUpEventHandler ControlRButtonUp: 
+    System.EventHandler CustomizationDone: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_CommandBarKeyDownEventHandler CommandBarKeyDown: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_ToolBarContextMenuEventHandler ToolBarContextMenu: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_TrackingModeChangedEventHandler TrackingModeChanged: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_CustomizationResetToolBarEventHandler CustomizationResetToolBar: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_CustomizationAddToolBarEventHandler CustomizationAddToolBar: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_CustomizationDeleteToolBarEventHandler CustomizationDeleteToolBar: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_ControlNotifyEventHandler ControlNotify: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_GetActiveDocumentIDEventHandler GetActiveDocumentID: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_OLEStartDragEventHandler OLEStartDrag: 
+    AxXtremeCommandBars._DCommandBarsFrameEvents_OLECompleteDragEventHandler OLECompleteDrag: 
+  Methods:
+    RecalcLayout(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddIconHandle(Int32, Int32, Int32, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveCommandBars(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveCommandBars(Object, Object, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadCommandBars(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadCommandBars(Object, Object, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadDesignerBars(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadDesignerBars(Object, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindControl(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    FindControl(Object, Object, Object, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DockToolBar(CommandBar, Int32, Int32, XTPBarPosition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetSpecialColor(XTPColorManagerColor): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ShowTabWorkspace(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    MoveAlignedControl(Object, Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadStateFromString(String, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadStateFromString(String, Boolean, Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveStateToString(Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveStateToString(Boolean, Boolean, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    get_VisualTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_VisualTheme(XTPVisualTheme): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Icons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Icons(ImageManagerIcons): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ScaleMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ScaleMode(XTPScaleMode): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CtlRightToLeft(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_CtlRightToLeft(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Count(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Item(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ActiveMenuBar(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_KeyBindings(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Options(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TabWorkspace(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_StatusBar(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_MessageBar(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_DesignerControls(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_GlobalSettings(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_CustomizedControl(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ToolTipContext(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_TrackingMode(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_FocusedCommandBar(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Actions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_PaintManager(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ContextMenus(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_RecentFileList(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    add_Execute(_DCommandBarsFrameEvents_ExecuteEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Execute(_DCommandBarsFrameEvents_ExecuteEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_UpdateEvent(_DCommandBarsFrameEvents_UpdateEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_UpdateEvent(_DCommandBarsFrameEvents_UpdateEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ResizeEvent(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ResizeEvent(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_GetClientBordersWidth(_DCommandBarsFrameEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_GetClientBordersWidth(_DCommandBarsFrameEvents_GetClientBordersWidthEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ControlSelected(_DCommandBarsFrameEvents_ControlSelectedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ControlSelected(_DCommandBarsFrameEvents_ControlSelectedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_InitCommandsPopup(_DCommandBarsFrameEvents_InitCommandsPopupEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_InitCommandsPopup(_DCommandBarsFrameEvents_InitCommandsPopupEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ResizeClient(_DCommandBarsFrameEvents_ResizeClientEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ResizeClient(_DCommandBarsFrameEvents_ResizeClientEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_SpecialColorChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_SpecialColorChanged(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_RepositionAlignedControls(_DCommandBarsFrameEvents_RepositionAlignedControlsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_RepositionAlignedControls(_DCommandBarsFrameEvents_RepositionAlignedControlsEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_Customization(_DCommandBarsFrameEvents_CustomizationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_Customization(_DCommandBarsFrameEvents_CustomizationEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ToolBarVisibleChanged(_DCommandBarsFrameEvents_ToolBarVisibleChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ToolBarVisibleChanged(_DCommandBarsFrameEvents_ToolBarVisibleChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ControlRButtonUp(_DCommandBarsFrameEvents_ControlRButtonUpEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ControlRButtonUp(_DCommandBarsFrameEvents_ControlRButtonUpEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CustomizationDone(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CustomizationDone(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CommandBarKeyDown(_DCommandBarsFrameEvents_CommandBarKeyDownEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CommandBarKeyDown(_DCommandBarsFrameEvents_CommandBarKeyDownEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ToolBarContextMenu(_DCommandBarsFrameEvents_ToolBarContextMenuEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ToolBarContextMenu(_DCommandBarsFrameEvents_ToolBarContextMenuEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_TrackingModeChanged(_DCommandBarsFrameEvents_TrackingModeChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_TrackingModeChanged(_DCommandBarsFrameEvents_TrackingModeChangedEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CustomizationResetToolBar(_DCommandBarsFrameEvents_CustomizationResetToolBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CustomizationResetToolBar(_DCommandBarsFrameEvents_CustomizationResetToolBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CustomizationAddToolBar(_DCommandBarsFrameEvents_CustomizationAddToolBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CustomizationAddToolBar(_DCommandBarsFrameEvents_CustomizationAddToolBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_CustomizationDeleteToolBar(_DCommandBarsFrameEvents_CustomizationDeleteToolBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CustomizationDeleteToolBar(_DCommandBarsFrameEvents_CustomizationDeleteToolBarEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_ControlNotify(_DCommandBarsFrameEvents_ControlNotifyEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_ControlNotify(_DCommandBarsFrameEvents_ControlNotifyEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_GetActiveDocumentID(_DCommandBarsFrameEvents_GetActiveDocumentIDEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_GetActiveDocumentID(_DCommandBarsFrameEvents_GetActiveDocumentIDEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OLEStartDrag(_DCommandBarsFrameEvents_OLEStartDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OLEStartDrag(_DCommandBarsFrameEvents_OLEStartDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_OLECompleteDrag(_DCommandBarsFrameEvents_OLECompleteDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_OLECompleteDrag(_DCommandBarsFrameEvents_OLECompleteDragEventHandler): PrivateScope, Public, HideBySig, SpecialName
+    OLEDrag(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddMiniToolBar(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableCustomization(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetDispatch(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetMDIClient(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ClosePopups(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SetSpecialColor(XTPColorManagerColor, UInt32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddDialogBar(String, XTPBarPosition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadStateFromXMLString(String, String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    LoadStateFromXMLString(String, String, StateOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveStateToXMLString(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SaveStateToXMLString(String, StateOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateStateOptions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DoPropExchange(PropExchange): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DoPropExchange(PropExchange, StateOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    DeleteAll(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddMenuBar(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddTabToolBar(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddRibbonBar(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AttachToWindow(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ShowCustomizeDialog(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableOffice2007Frame(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EnableActions(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateGalleryItems(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateCommandBarControl(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateCommandBar(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ContextHelp(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetEnumerator(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Add(String, XTPBarPosition): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AddImageList(Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetClientRect(Int32&(Out), Int32&(Out), Int32&(Out), Int32&(Out)): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ExecuteEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_ExecuteEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_ExecuteEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ExecuteEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBarControl): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBarControl control : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_UpdateEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_UpdateEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_UpdateEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_UpdateEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBarControl): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBarControl control : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_GetClientBordersWidthEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_GetClientBordersWidthEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_GetClientBordersWidthEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_GetClientBordersWidthEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 left : Public
+    Int32 top : Public
+    Int32 right : Public
+    Int32 bottom : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ControlSelectedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_ControlSelectedEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_ControlSelectedEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ControlSelectedEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBarControl): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBarControl control : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_InitCommandsPopupEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_InitCommandsPopupEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_InitCommandsPopupEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_InitCommandsPopupEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar commandBar : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ResizeClientEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_ResizeClientEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_ResizeClientEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ResizeClientEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 left : Public
+    Int32 top : Public
+    Int32 right : Public
+    Int32 bottom : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_RepositionAlignedControlsEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_RepositionAlignedControlsEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_RepositionAlignedControlsEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_RepositionAlignedControlsEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32, Int32, Int32, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 left : Public
+    Int32 top : Public
+    Int32 right : Public
+    Int32 bottom : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_CustomizationEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_CustomizationEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_CustomizationEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_CustomizationEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CustomizeOptions): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CustomizeOptions options : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ToolBarVisibleChangedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_ToolBarVisibleChangedEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_ToolBarVisibleChangedEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ToolBarVisibleChangedEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar toolBar : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ControlRButtonUpEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_ControlRButtonUpEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_ControlRButtonUpEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ControlRButtonUpEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBarControl): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBarControl control : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_CommandBarKeyDownEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_CommandBarKeyDownEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_CommandBarKeyDownEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_CommandBarKeyDownEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar, Int32, Int16): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar commandBar : Public
+    Int32 keyCode : Public
+    Int16 shift : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ToolBarContextMenuEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_ToolBarContextMenuEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_ToolBarContextMenuEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ToolBarContextMenuEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar, XtremeCommandBars.CommandBar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar toolBar : Public
+    XtremeCommandBars.CommandBar contextMenu : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_TrackingModeChangedEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_TrackingModeChangedEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_TrackingModeChangedEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_TrackingModeChangedEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar, Boolean): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar commandBar : Public
+    Boolean mode : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_CustomizationResetToolBarEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_CustomizationResetToolBarEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_CustomizationResetToolBarEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_CustomizationResetToolBarEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar toolBar : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_CustomizationAddToolBarEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_CustomizationAddToolBarEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_CustomizationAddToolBarEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_CustomizationAddToolBarEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar toolBar : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_CustomizationDeleteToolBarEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_CustomizationDeleteToolBarEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_CustomizationDeleteToolBarEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_CustomizationDeleteToolBarEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBar): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBar toolBar : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ControlNotifyEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_ControlNotifyEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_ControlNotifyEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_ControlNotifyEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.CommandBarControl, Int32, System.Object, System.Object): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.CommandBarControl control : Public
+    Int32 code : Public
+    System.Object notifyData : Public
+    System.Object handled : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_GetActiveDocumentIDEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_GetActiveDocumentIDEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_GetActiveDocumentIDEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_GetActiveDocumentIDEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 id : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_OLEStartDragEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_OLEStartDragEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_OLEStartDragEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_OLEStartDragEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(XtremeCommandBars.DataObject, Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    XtremeCommandBars.DataObject data : Public
+    Int32 allowedEffects : Public
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_OLECompleteDragEventHandler: AutoLayout, AnsiClass, Class, Public, Sealed
+  :System.MulticastDelegate
+    Void .ctor(System.Object, IntPtr): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    Invoke(Object, _DCommandBarsFrameEvents_OLECompleteDragEvent): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    BeginInvoke(Object, _DCommandBarsFrameEvents_OLECompleteDragEvent, AsyncCallback, Object): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    EndInvoke(IAsyncResult): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars._DCommandBarsFrameEvents_OLECompleteDragEvent: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(Int32): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 effect : Public
+Class AxXtremeCommandBars.AxCommandBarsFrameEventMulticaster: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(AxXtremeCommandBars.AxCommandBarsFrame): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    XtremeCommandBars._DCommandBarsFrameEvents
+  Methods:
+    Execute(CommandBarControl): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Update(CommandBarControl): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Resize(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetClientBordersWidth(Int32&, Int32&, Int32&, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ControlSelected(CommandBarControl): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    InitCommandsPopup(CommandBar): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ResizeClient(Int32, Int32, Int32, Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    SpecialColorChanged(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    RepositionAlignedControls(Int32&, Int32&, Int32&, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    Customization(CustomizeOptions): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ToolBarVisibleChanged(CommandBar): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ControlRButtonUp(CommandBarControl): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CustomizationDone(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CommandBarKeyDown(CommandBar, Int32&, Int16): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ToolBarContextMenu(CommandBar, CommandBar): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    TrackingModeChanged(CommandBar, Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CustomizationResetToolBar(CommandBar): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CustomizationAddToolBar(CommandBar): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CustomizationDeleteToolBar(CommandBar): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ControlNotify(CommandBarControl, Int32, Object, Object&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    GetActiveDocumentID(Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OLEStartDrag(DataObject&, Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    OLECompleteDrag(Int32&): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars.AxImageManager: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.AxHost
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    XtremeCommandBars.ImageManagerIcons Icons 'get set' : 
+  Methods:
+    get_Icons(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Icons(ImageManagerIcons): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    IsAlphaIconsSupported(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars.AxImageManagerEventMulticaster: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(AxXtremeCommandBars.AxImageManager): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    XtremeCommandBars._DImageManagerEvents
+Class AxXtremeCommandBars.AxPrintPreview: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.AxHost
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Properties:
+    XtremeCommandBars.IPrintView PrintView 'get set' : 
+    System.String Title 'get set' : 
+    XtremeCommandBars.XTPVisualTheme VisualTheme 'get set' : 
+    Int32 ZoomState 'get set' : 
+    Boolean ToolBarVisible 'get set' : 
+    XtremeCommandBars.CommandBar ToolBar 'get ' : 
+  Events:
+    System.EventHandler CloseClick: 
+    System.EventHandler PrintClick: 
+  Methods:
+    get_PrintView(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_PrintView(IPrintView): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_Title(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_Title(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_VisualTheme(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_VisualTheme(XTPVisualTheme): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ZoomState(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ZoomState(Int32): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ToolBarVisible(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    set_ToolBarVisible(Boolean): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    get_ToolBar(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask, SpecialName
+    add_CloseClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_CloseClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    add_PrintClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    remove_PrintClick(EventHandler): PrivateScope, Public, HideBySig, SpecialName
+    CreateMarkupPrintView(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    ShowPrintDialog(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    CreateRichEditPrintView(String): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    AboutBox(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+Class AxXtremeCommandBars.AxPrintPreviewEventMulticaster: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(AxXtremeCommandBars.AxPrintPreview): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    XtremeCommandBars._DPrintPreviewEvents
+  Methods:
+    CloseClick(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask
+    PrintClick(): PrivateScope, Public, Virtual, HideBySig, VtableLayoutMask

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="CubeSense">
+</Property><Property Name="Solution File" Value="E:\Lumisense\eigthCubed\Software\CubeSense\CubeSense.sln">
+</Property><Property Name="Date" Value="Sunday, December 25, 2011">
+</Property><Property Name="Time" Value="19:12 PM">
+</Property></Properties><Event ErrorLevel="0" Project="CubeSense" Source="CubeSense.vcproj" Description="Converting project file 'E:\Lumisense\eigthCubed\Software\CubeSense\CubeSense.vcproj'.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'CopyLocalDependencies' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'AssemblyReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="ActiveX references no longer support per-configuration settings.  To generate a custom interop wrapper, use tlbimp/aximp to generate the interop assembly and add it as an assembly reference.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'CopyLocalDependencies' of 'ActiveXReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'ActiveXReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'CopyLocalDependencies' of 'ActiveXReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'ActiveXReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'CopyLocalDependencies' of 'ActiveXReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'ActiveXReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'CopyLocalDependencies' of 'ActiveXReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="1" Project="CubeSense" Source="CubeSense.vcproj" Description="Attribute 'UseDependenciesInBuild' of 'ActiveXReference' is not supported in this version and has been removed during conversion.">
+</Event><Event ErrorLevel="0" Project="CubeSense" Source="CubeSense.vcproj" Description="Done converting to new project file 'E:\Lumisense\eigthCubed\Software\CubeSense\CubeSense.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="CubeSense" Source="CubeSense.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="DelconUsb" Source="DelconUsb\DelconUsb.vcproj" Description="Converting project file 'E:\Lumisense\eigthCubed\Software\CubeSense\DelconUsb\DelconUsb.vcproj'.">
+</Event><Event ErrorLevel="1" Project="DelconUsb" Source="DelconUsb\DelconUsb.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="DelconUsb" Source="DelconUsb\DelconUsb.vcproj" Description="Done converting to new project file 'E:\Lumisense\eigthCubed\Software\CubeSense\DelconUsb\DelconUsb.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="DelconUsb" Source="DelconUsb\DelconUsb.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="CubeSense.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="CubeSense.sln" Description="Converted">
+</Event></UpgradeLog>

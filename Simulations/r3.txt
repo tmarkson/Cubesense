@@ -1,0 +1,1 @@
+Creating library file: dll_test1.a
